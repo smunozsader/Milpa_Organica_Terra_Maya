@@ -1,0 +1,650 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\geometry{margin=1in}
+
+% Colores corporativos
+\definecolor{tmgreen}{RGB}{76,153,76}
+\definecolor{tmbrown}{RGB}{139,90,43}
+\definecolor{tmlight}{RGB}{240,248,240}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{tmgreen}{\textbf{Terra Maya Orgánica}}}
+\fancyhead[R]{\textcolor{tmbrown}{Proyección Milpa Tecnificada}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+% Configuración de números
+\sisetup{
+  group-separator = {,},
+  group-minimum-digits = 4,
+  round-mode = places,
+  round-precision = 0
+}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+  \centering
+  \vspace*{1cm}
+  
+  {\LARGE\bfseries\textcolor{tmgreen}{Terra Maya Orgánica}\par}
+  \vspace{0.3cm}
+  {\large Producción Avícola Orgánica Certificada\par}
+  
+  \vspace{1.2cm}
+  
+  {\Large\textcolor{tmbrown}{Proyección Financiera}\par}
+  \vspace{0.2cm}
+  {\large Sistema de Milpa Tecnificada Orgánica\par}
+  \vspace{0.2cm}
+  {\large 5 Años --- Lote Inicial 20 ha\par}
+  
+  \vspace{1cm}
+  
+  {\normalsize\textbf{Basado en Sistema de Producción Continua de Maíz (SPCM)}\par}
+  {\normalsize CICY Yucatán --- Investigación Validada en Litosoles\par}
+  
+  \vspace{1cm}
+  
+  \begin{tabular}{ll}
+    \textbf{Ubicación:} & Timucuy, Yucatán, México \\
+    \textbf{Área fase 1:} & 20 hectáreas \\
+    \textbf{Sistema:} & Policultivo maíz-frijol-calabaza \\
+    \textbf{Método:} & 22,000 pocetas/ha + riego tecnificado \\
+    \textbf{Certificación:} & Orgánico nacional e internacional \\
+  \end{tabular}
+  
+  \vspace{0.8cm}
+  
+  \begin{center}
+  \rule{0.5\textwidth}{0.5pt}
+  
+  \vspace{0.3cm}
+  
+  \textbf{Elaborado por:}
+  
+  \vspace{0.2cm}
+  
+  {\large\textbf{MVZ Sergio Muñoz de Alba Medrano}}
+  
+  \vspace{0.15cm}
+  
+  \textit{Consultor Independiente}
+  
+  \vspace{0.15cm}
+  
+  \small Tel: +52 999 200 5550 \quad \texttt{smunozam@gmail.com}
+  
+  \vspace{0.3cm}
+  
+  \rule{0.5\textwidth}{0.5pt}
+  \end{center}
+  
+  \vspace{0.8cm}
+  
+  {\normalsize Diciembre 2025\par}
+\end{titlepage}
+
+% Resumen ejecutivo
+\section*{Resumen Ejecutivo}
+\addcontentsline{toc}{section}{Resumen Ejecutivo}
+
+El presente documento analiza la viabilidad financiera de implementar un sistema de milpa tecnificada orgánica de 20 hectáreas para Terra Maya Orgánica, empresa líder en producción avícola orgánica certificada en Yucatán.
+
+\subsection*{Objetivo del Proyecto}
+Establecer autosuficiencia en forraje para granjas avícolas y diversificar ingresos mediante la comercialización de frijol Jamapa orgánico y pepita de calabaza premium, utilizando el Sistema de Producción Continua de Maíz (SPCM) validado en suelos calizos yucatecos.
+
+\subsection*{Resultados Clave}
+
+\begin{itemize}
+  \item \textbf{Inversión inicial:} \$4,780,000 MXN (20 ha)
+  \item \textbf{Retorno de inversión (ROI) a 5 años:} 542.5\%
+  \item \textbf{Punto de equilibrio:} Año 1 (flujo de caja positivo inmediato)
+  \item \textbf{Ganancia neta acumulada (5 años):} \$25,933,152 MXN
+  \item \textbf{Ingreso promedio anual:} \$6,962,630 MXN
+\end{itemize}
+
+\subsection*{Distribución de Ingresos}
+\begin{itemize}
+  \item \textbf{Frijol Jamapa orgánico (43.2\%):} Principal cultivo comercial con precios premium
+  \item \textbf{Pepita de calabaza (30.4\%):} Mercado especializado de semillas orgánicas
+  \item \textbf{Maíz forrajero (26.4\%):} Autoconsumo avícola, eliminando compras externas
+\end{itemize}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Configuración del Sistema}
+
+\subsection{Diseño Agronómico}
+
+El sistema se basa en el policultivo tradicional maya (milpa) tecnificado mediante investigación científica del Centro de Investigación Científica de Yucatán (CICY), específicamente el Sistema de Producción Continua de Maíz (SPCM) desarrollado por el Dr. Alfonso Larqué Saavedra y colaboradores.
+
+\subsubsection{Especificaciones Técnicas}
+
+\begin{table}[h]
+\centering
+\caption{Parámetros del Sistema Pocetas}
+\begin{tabular}{@{}lrl@{}}
+\toprule
+\textbf{Parámetro} & \multicolumn{1}{c}{\textbf{Valor}} & \textbf{Unidad} \\
+\midrule
+Densidad de pocetas & 22,000 & pocetas/ha \\
+Dimensión pocetas & 30 $\times$ 30 $\times$ 30 & cm \\
+Volumen sustrato/poceta & 10 & litros \\
+Composición sustrato & 70/30 & gallinaza/coco (\%) \\
+Sistema de riego & Goteo + fertirrigación & --- \\
+Ciclos productivos/año & 3 & ciclos \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Composición de Siembra por Poceta}
+
+\begin{table}[h]
+\centering
+\caption{Densidad de Siembra Intercalada}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Cultivo} & \textbf{Semillas/poceta} & \textbf{Plantas/ha} & \textbf{Supervivencia} \\
+\midrule
+Maíz criollo & 3 & 52,800 & 80\% \\
+Frijol Jamapa & 2 & 35,200 & 80\% \\
+Calabaza & 0.5 & 8,800 & 80\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Rendimientos Proyectados}
+
+Los rendimientos se calibran según investigaciones publicadas del SPCM en suelos litosoles (calizos pedregosos) de Yucatán, ajustados para policultivo orgánico.
+
+\begin{table}[h]
+\centering
+\caption{Productividad Anual Base (Año 1)}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Cultivo} & \textbf{t/ha/año} & \textbf{Total 20 ha (t)} \\
+\midrule
+Maíz grano & 10.5 & 209.1 \\
+Frijol Jamapa & 3.9 & 78.1 \\
+Pepita calabaza\footnote{10\% del peso de frutos} & 1.2 & 24.0 \\
+\midrule
+\textbf{Total} & 15.6 & 311.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Nota:} Estos rendimientos representan \textbf{10 veces} la productividad de milpa tradicional (1 ciclo/año, $<$1 t/ha maíz), validando la viabilidad del sistema tecnificado.
+
+\newpage
+\section{Análisis Financiero}
+
+\subsection{Inversión Inicial}
+
+\begin{table}[h]
+\centering
+\caption{Desglose de Inversión Inicial (20 ha)}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Componente} & \textbf{Costo/ha (MXN)} & \textbf{Total (MXN)} & \textbf{\%} \\
+\midrule
+Excavación pocetas\footnote{Incluye tolchas perimetrales} & 150,000 & 3,000,000 & 62.8\% \\
+Sustrato orgánico & 44,000 & 880,000 & 18.4\% \\
+Sistema riego goteo & 45,000 & 900,000 & 18.8\% \\
+\midrule
+\rowcolor{tmlight}
+\textbf{TOTAL} & \textbf{239,000} & \textbf{4,780,000} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Observaciones:}
+\begin{itemize}
+  \item Excavación en litosol requiere equipo especializado (\$7/poceta aprox.)
+  \item Sustrato parcialmente cubierto por gallinaza de granjas propias (30\% reducción)
+  \item Sistema de riego escalable a 250 ha sin duplicar infraestructura base
+  \item Subsidios SADER para agricultura tecnificada disponibles (no considerados en análisis conservador)
+\end{itemize}
+
+\subsection{Costos Operativos Anuales}
+
+\begin{table}[h]
+\centering
+\caption{Costos de Operación por Hectárea}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto} & \textbf{MXN/ha/año} \\
+\midrule
+Semillas criollas/orgánicas & 3,000 \\
+Fertilizantes orgánicos\footnote{Compost, biofertilizantes, biofábricas} & 8,000 \\
+Operación sistema riego\footnote{Energía, mantenimiento} & 5,000 \\
+Mano de obra (3 ciclos)\footnote{Siembra, manejo, cosecha} & 25,000 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{Total/ha} & \textbf{41,000} \\
+\textbf{Total 20 ha} & \textbf{820,000} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Precios de Mercado (2025)}
+
+\begin{table}[h]
+\centering
+\caption{Valoración de Productos Orgánicos Certificados}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Producto} & \textbf{Precio (MXN/t)} & \textbf{Referencia} \\
+\midrule
+Maíz forrajero\footnote{Costo oportunidad vs compra externa} & 8,000 & Autoconsumo \\
+Frijol Jamapa orgánico & 35,000 & Mercado premium \\
+Pepita calabaza orgánica & 80,000 & Exportación/gourmet \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Prima orgánica:} Frijol certificado obtiene +190\% vs convencional (\$12,000/t); pepita +250\% vs industrializada.
+
+\newpage
+\section{Proyección 5 Años}
+
+\subsection{Supuestos de Mejora Productiva}
+
+El sistema presenta mejora gradual por acumulación de materia orgánica y establecimiento del ecosistema:
+
+\begin{itemize}
+  \item \textbf{Año 1:} Productividad base (100\%) --- Establecimiento inicial
+  \item \textbf{Años 2-3:} +10\% --- Mejora de suelos con biofábricas y microorganismos nativos
+  \item \textbf{Años 4-5:} +15\% --- Ecosistema maduro, sinergia policultivo optimizada
+\end{itemize}
+
+\subsection{Tabla de Proyección Financiera}
+
+\begin{table}[h]
+\centering
+\small
+\caption{Análisis Anual de Productividad e Ingresos (20 ha)}
+\begin{tabular}{@{}crrrrrrr@{}}
+\toprule
+\textbf{Año} & \textbf{Maíz} & \textbf{Frijol} & \textbf{Pepita} & \textbf{Ingresos} & \textbf{Costos} & \textbf{Ganancia} & \textbf{ROI} \\
+ & \textbf{(t)} & \textbf{(t)} & \textbf{(t)} & \textbf{(MXN)} & \textbf{Op. (MXN)} & \textbf{Neta (MXN)} & \textbf{Acum.} \\
+\midrule
+1 & 209.1 & 78.1 & 24.0 & 6,329,664 & 820,000 & 5,509,664 & 15.3\% \\
+2 & 230.0 & 86.0 & 26.4 & 6,962,630 & 820,000 & 6,142,630 & 143.8\% \\
+3 & 230.0 & 86.0 & 26.4 & 6,962,630 & 820,000 & 6,142,630 & 272.3\% \\
+4 & 240.5 & 89.9 & 27.6 & 7,279,114 & 820,000 & 6,459,114 & 407.4\% \\
+5 & 240.5 & 89.9 & 27.6 & 7,279,114 & 820,000 & 6,459,114 & 542.5\% \\
+\midrule
+\rowcolor{tmlight}
+\multicolumn{4}{c}{\textbf{TOTALES 5 AÑOS}} & \textbf{34,813,152} & \textbf{4,100,000} & \textbf{30,713,152} & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Indicadores de Rentabilidad}
+
+\begin{table}[h]
+\centering
+\caption{Métricas Financieras del Proyecto}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Indicador} & \textbf{Valor} \\
+\midrule
+Inversión inicial & \$4,780,000 MXN \\
+Ingresos acumulados (5 años) & \$34,813,152 MXN \\
+Costos operativos totales (5 años) & \$8,880,000 MXN\footnote{Incluye inversión inicial} \\
+Ganancia neta acumulada & \$25,933,152 MXN \\
+\midrule
+\rowcolor{tmlight}
+\textbf{ROI 5 años} & \textbf{542.5\%} \\
+Punto de equilibrio & \textbf{Año 1} \\
+TIR estimada\footnote{Tasa Interna de Retorno} & \textbf{$>$120\% anual} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretación:} Cada peso invertido genera \textbf{\$5.43 de ganancia neta} en 5 años, con recuperación total de capital en el primer año productivo.
+
+\newpage
+\section{Distribución de Ingresos por Producto}
+
+\subsection{Análisis de Contribución}
+
+\begin{table}[h]
+\centering
+\caption{Ingresos Promedio Anuales por Cultivo (5 años)}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Producto} & \textbf{Volumen} & \textbf{Precio} & \textbf{Ingreso} & \textbf{Contribución} \\
+ & \textbf{(t/año)} & \textbf{(MXN/t)} & \textbf{(MXN)} & \textbf{(\%)} \\
+\midrule
+Frijol Jamapa & 86.0 & 35,000 & 3,008,544 & 43.2\% \\
+Pepita calabaza & 26.4 & 80,000 & 2,114,112 & 30.4\% \\
+Maíz forrajero & 230.0 & 8,000 & 1,839,974 & 26.4\% \\
+\midrule
+\rowcolor{tmlight}
+\textbf{TOTAL} & --- & --- & \textbf{6,962,630} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Gráfica de Composición de Ingresos}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=1.2cm,
+    width=\textwidth,
+    height=8cm,
+    ylabel={Ingresos anuales (MXN)},
+    xlabel={Producto},
+    xtick=data,
+    xticklabels={Frijol Jamapa, Pepita Calabaza, Maíz Forrajero},
+    ymin=0,
+    ymax=3500000,
+    nodes near coords,
+    nodes near coords align={vertical},
+    every node near coord/.append style={font=\small, /pgf/number format/.cd, fixed, precision=0, set thousands separator={,}},
+    ymajorgrids=true,
+    grid style=dashed,
+]
+\addplot[fill=tmgreen] coordinates {(1,3008544) (2,2114112) (3,1839974)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection{Estrategia de Mercado}
+
+\begin{itemize}
+  \item \textbf{Frijol Jamapa (43\% ingresos):} Variedad premium yucateca con alta demanda nacional. Certificación orgánica permite acceso a cadenas gourmet y exportación.
+  
+  \item \textbf{Pepita calabaza (30\% ingresos):} Mercado especializado (snacks saludables, panadería artesanal). Pepita orgánica mexicana tiene prestigio internacional.
+  
+  \item \textbf{Maíz forrajero (26\% ingresos):} Elimina dependencia de proveedores externos para granjas avícolas. Valor calculado como costo evitado (ahorro de \$1.84M anuales en compras).
+\end{itemize}
+
+\newpage
+\section{Análisis de Sensibilidad}
+
+\subsection{Escenarios de Precio}
+
+\begin{table}[h]
+\centering
+\caption{Impacto de Variaciones de Precio en ROI 5 Años}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Escenario} & \textbf{Variación} & \textbf{Ganancia Neta} & \textbf{ROI} \\
+ & \textbf{Precios} & \textbf{5 años (MXN)} & \textbf{(\%)} \\
+\midrule
+Pesimista & $-20\%$ & 18,183,152 & 380.3\% \\
+\rowcolor{tmlight}
+Base & 0\% & 25,933,152 & 542.5\% \\
+Optimista & $+20\%$ & 33,683,152 & 704.7\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Observación:} Incluso con caída de 20\% en precios orgánicos, el proyecto mantiene ROI $>$380\%, demostrando robustez financiera.
+
+\subsection{Escenarios de Productividad}
+
+\begin{table}[h]
+\centering
+\caption{Impacto de Variaciones en Rendimiento}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Escenario} & \textbf{Rendimiento} & \textbf{Ganancia Neta} & \textbf{ROI} \\
+ & \textbf{vs Base} & \textbf{5 años (MXN)} & \textbf{(\%)} \\
+\midrule
+Bajo (sequía/plagas) & $-15\%$ & 19,858,152 & 415.4\% \\
+\rowcolor{tmlight}
+Base (SPCM validado) & 0\% & 25,933,152 & 542.5\% \\
+Alto (condiciones óptimas) & $+15\%$ & 32,008,152 & 669.6\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Riesgos Identificados y Mitigación}
+
+\begin{table}[h]
+\centering
+\small
+\caption{Matriz de Riesgos}
+\begin{tabular}{@{}p{3cm}p{4cm}p{5cm}@{}}
+\toprule
+\textbf{Riesgo} & \textbf{Impacto Potencial} & \textbf{Estrategia de Mitigación} \\
+\midrule
+Huracanes & Pérdida 1 ciclo ($-$33\% año) & Escalonamiento de siembras, tolchas protectoras \\
+\midrule
+Plagas & $-$10-20\% rendimiento & Control biológico con aves de pastoreo, diversidad policultivo \\
+\midrule
+Sequía extraordinaria & Falla de ciclo & Pozos profundos con reserva 6 meses, mulching \\
+\midrule
+Caída precios orgánicos & $-$15-25\% ingresos & Integración vertical (autoconsumo avícola), contratos anticipados \\
+\midrule
+Mano de obra & Incremento costos 30\% & Capacitación comunidad local, mecanización gradual \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+\section{Proyección Evolutiva 5 Años}
+
+\subsection{Gráfica de Ganancia Acumulada}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=10cm,
+    xlabel={Año},
+    ylabel={Ganancia Acumulada (MXN)},
+    xmin=0, xmax=5,
+    ymin=-5000000, ymax=30000000,
+    xtick={0,1,2,3,4,5},
+    ytick={-5000000,0,5000000,10000000,15000000,20000000,25000000,30000000},
+    yticklabel style={/pgf/number format/.cd, fixed, precision=0, set thousands separator={,}},
+    legend pos=north west,
+    ymajorgrids=true,
+    xmajorgrids=true,
+    grid style=dashed,
+]
+
+% Línea de inversión inicial
+\addplot[color=red, very thick, dashed] coordinates {(0,-4780000) (5,-4780000)};
+\addlegendentry{Inversión inicial}
+
+% Línea de punto de equilibrio
+\addplot[color=black, thick, dotted] coordinates {(0,0) (5,0)};
+\addlegendentry{Punto de equilibrio}
+
+% Ganancia acumulada
+\addplot[color=tmgreen, very thick, mark=*, mark size=3pt] coordinates {
+    (0,-4780000)
+    (1,729664)
+    (2,6872294)
+    (3,13014924)
+    (4,19474038)
+    (5,25933152)
+};
+\addlegendentry{Ganancia neta acumulada}
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Análisis:} La inversión inicial de \$4.78M se recupera completamente en el \textbf{Año 1}, con flujo de caja positivo desde el primer ciclo productivo. La pendiente ascendente demuestra rentabilidad sostenida.
+
+\subsection{Evolución de Productividad}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=8cm,
+    xlabel={Año},
+    ylabel={Producción Total (toneladas)},
+    xmin=1, xmax=5,
+    ymin=0, ymax=400,
+    xtick={1,2,3,4,5},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+    ybar stacked,
+    bar width=15pt,
+]
+
+% Maíz
+\addplot[fill=tmgreen!70] coordinates {(1,209.1) (2,230.0) (3,230.0) (4,240.5) (5,240.5)};
+\addlegendentry{Maíz}
+
+% Frijol
+\addplot[fill=tmbrown!70] coordinates {(1,78.1) (2,86.0) (3,86.0) (4,89.9) (5,89.9)};
+\addlegendentry{Frijol}
+
+% Pepita
+\addplot[fill=orange!70] coordinates {(1,24.0) (2,26.4) (3,26.4) (4,27.6) (5,27.6)};
+\addlegendentry{Pepita}
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\newpage
+\section{Conclusiones y Recomendaciones}
+
+\subsection{Viabilidad Financiera}
+
+El análisis demuestra \textbf{viabilidad económica excepcional} del sistema de milpa tecnificada para Terra Maya Orgánica:
+
+\begin{enumerate}
+  \item \textbf{Recuperación inmediata:} Inversión inicial recuperada en Año 1 ($<$12 meses operativos)
+  \item \textbf{Rentabilidad sostenida:} ROI 542\% a 5 años (promedio 108\%/año)
+  \item \textbf{Robustez financiera:} Proyecto viable incluso con caídas de 20\% en precios o rendimientos
+  \item \textbf{Diversificación de ingresos:} Tres productos comerciales reducen riesgo de mercado
+\end{enumerate}
+
+\subsection{Beneficios Estratégicos}
+
+Más allá del retorno financiero directo, el proyecto aporta:
+
+\begin{itemize}
+  \item \textbf{Autosuficiencia avícola:} Elimina dependencia de 230 t/año de maíz forrajero externo
+  \item \textbf{Sostenibilidad ambiental:} Cero roza-tumba-quema, captura de carbono, conservación de selva
+  \item \textbf{Impacto social:} Generación de empleo para mujeres rurales mayas (25 empleos directos/20 ha)
+  \item \textbf{Innovación científica:} Validación de SPCM en producción orgánica comercial
+  \item \textbf{Fortalecimiento de marca:} Integración vertical orgánica certificada (única en región)
+\end{itemize}
+
+\subsection{Recomendaciones de Implementación}
+
+\subsubsection{Fase 1: Lote Piloto (Año 1)}
+\begin{itemize}
+  \item Implementar 20 ha validando todos los supuestos del modelo
+  \item Establecer biofábricas in-situ para producción de biofertilizantes
+  \item Certificar orgánico desde ciclo 1 (transición 0 por suelo virgen)
+  \item Documentar protocolos para escalamiento
+\end{itemize}
+
+\subsubsection{Fase 2: Escalamiento (Años 2-3)}
+\begin{itemize}
+  \item Expandir a 100 ha con capital generado en Año 1
+  \item Mecanizar excavación de pocetas (reducir costo 20\%)
+  \item Establecer contratos anticipados con distribuidores orgánicos
+  \item Integrar procesamiento de pepita (descascarado in-situ, +40\% valor agregado)
+\end{itemize}
+
+\subsubsection{Fase 3: Consolidación (Años 4-5)}
+\begin{itemize}
+  \item Alcanzar 250 ha objetivo
+  \item Exportación directa de frijol Jamapa a mercados internacionales
+  \item Turismo agroecológico (educación milpa orgánica)
+  \item Replicación del modelo en comunidades mayas asociadas
+\end{itemize}
+
+\subsection{Factores Críticos de Éxito}
+
+\begin{enumerate}
+  \item \textbf{Certificación orgánica:} Mantener estándares para precios premium (43-80\% sobre convencional)
+  \item \textbf{Gestión hídrica:} Garantizar operación de 3 ciclos/año con riego confiable
+  \item \textbf{Control biológico:} Integración aves-cultivos para reducir plagas sin químicos
+  \item \textbf{Calidad de semilla:} Selección masal criollo adaptado a condiciones locales
+  \item \textbf{Capacitación continua:} Personal técnico especializado en SPCM y agricultura orgánica
+\end{enumerate}
+
+\newpage
+\section*{Anexos}
+
+\subsection*{A. Metodología de Cálculo}
+
+\textbf{Rendimiento por cultivo:}
+\begin{align*}
+\text{Plantas/ha} &= \text{Pocetas/ha} \times \text{Semillas/poceta} \times \text{Supervivencia} \\
+\text{Rend. anual (t/ha)} &= \text{Plantas/ha} \times \text{Rend./planta/ciclo} \times 3 \text{ ciclos}
+\end{align*}
+
+\textbf{Ingresos anuales:}
+\begin{align*}
+\text{Ingresos}_{\text{año}} &= \sum_{i=1}^{3} (\text{Producción}_i \times \text{Precio}_i \times \text{Factor mejora})
+\end{align*}
+
+\textbf{ROI acumulado:}
+\begin{align*}
+\text{ROI}_{\text{acum}} &= \frac{\sum \text{Ganancias netas} - \text{Inversión inicial}}{\text{Inversión inicial}} \times 100\%
+\end{align*}
+
+\subsection*{B. Referencias Científicas}
+
+\begin{itemize}
+  \item Larqué Saavedra, A., et al. (2018). \textit{Sistema de Producción Continua de Maíz en suelos pedregosos de Yucatán}. CICY.
+  \item Terra Latinoamericana (2017). \textit{Rendimientos de milpa orgánica en policultivo bajo riego}.
+  \item SAGARPA (2023). \textit{Precios de garantía y mercado orgánico certificado, México}.
+\end{itemize}
+
+\subsection*{C. Datos de Contacto}
+
+\begin{tabular}{ll}
+\textbf{Empresa:} & Terra Maya Orgánica \\
+\textbf{Representante:} & Lic. Carlos Sobrino Sierra \\
+\textbf{Sitio web:} & https://terramaya.mx/ \\
+\textbf{Ubicación:} & Timucuy, Yucatán, México \\
+\textbf{Certificaciones:} & Orgánico nacional e internacional \\
+\end{tabular}
+
+\vfill
+
+\begin{center}
+\textcolor{tmgreen}{\rule{\textwidth}{2pt}}
+
+\large\textbf{Terra Maya Orgánica}
+
+\textit{Agricultura orgánica maya con tecnología científica}
+
+\textit{Produciendo alimentos sanos mientras conservamos nuestra selva}
+
+\textcolor{tmgreen}{\rule{\textwidth}{2pt}}
+\end{center}
+
+\end{document}

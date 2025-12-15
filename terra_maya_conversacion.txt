@@ -1,0 +1,28 @@
+Explorando la Productividad del Sistema de Milpa Tecnificada Orgánica para Terra Maya Orgánica
+
+¡Hola! 
+Como sabes, Terra Maya Orgánica, liderada por el Lic. Carlos Sobrino Sierra (visita su sitio en https://terramaya.mx/), se destaca por su producción sustentable de pollo orgánico en libre pastoreo, con una dieta 100% vegetal que resalta el valor nutricional de la carne y el hueso, todo bajo certificaciones orgánicas nacionales e internacionales. Su misión social, enfocada en generar empleo para mujeres rurales mayas y proteger el medio ambiente, encaja perfectamente con un sistema de milpa tecnificada orgánica a gran escala (250 ha bajo riego). Este enfoque no solo proveerá forraje y granos para las granjas avícolas, sino que permitirá comercializar frijol Jamapa y pepita de calabaza, diversificando ingresos mientras se integra la sabiduría ancestral maya con innovación tecnológica.
+
+El primer lote de 4 parcelas (20 ha totales) incorpora tolchés como barreras contra vientos y hospederos para aves controladoras de plagas, densidad de 22,000 pocetas/ha en litosoles de Timucuy, Yucatán (con sustrato de gallinaza y cáscara de coco), riego por goteo con fertirrigación vía venturi, y fertilizantes orgánicos (abiertos a biofábricas con microorganismos del monte). La siembra: 3 semillas de maíz criollo, 2 de frijol Jamapa y 1 de calabaza por cada dos pocetas (66,000 semillas maíz/ha, 44,000 frijol/ha, 11,000 calabaza/ha).
+
+Basado en el Sistema de Producción Continua de Maíz (SPCM) validado en Yucatán por investigadores como Alfonso Larqué Saavedra del CICY, que logra hasta 10 t/ha/año de grano de maíz en suelos pedregosos con riego y materia orgánica, y estudios orgánicos de milpa (como el de Terra Latinoamericana, que reporta 7.9 t/ha de maíz y 1.9 t/ha de frijol en policultivo por ciclo), podemos estimar productividades realistas. El SPCM transforma la milpa tradicional (1 ciclo/año, <1 t/ha maíz) en un sistema "perenne" con 3 ciclos/año (escalonados, ~3-4 meses/ciclo), multiplicando rendimientos sin roza-tumba-quema, preservando la selva y mitigando cambio climático.
+Estimación de Productividad Esperada
+Asumimos:
+
+Supervivencia de plantas: 80% (típico en siembra directa orgánica).
+Plantas/ha: Maíz ~52,800; frijol ~35,200; calabaza ~8,800.
+Rendimientos por ciclo (ajustados a densidad alta y policultivo orgánico bajo riego): Maíz 3.5 t/ha (basado en SPCM); frijol 1.3 t/ha; calabaza 4 t/ha en frutos (equivalente a ~0.4 t/ha pepita, asumiendo 10% semillas).
+3 ciclos/año: Posible por bono climático yucateco (sin heladas) y acuífero accesible.
+
+
+
+Cultivo,Plantas/ha (establecidas),Rendimiento por ciclo (t/ha),"Rendimiento anual (t/ha, 3 ciclos)",Notas
+Maíz criollo (grano),"52,800",3.5,10.5,Forraje extra ~20 t/ha/ciclo para pollos; alineado con SPCM en litosoles.
+Frijol Jamapa,"35,200",1.3,3.9,Comercializable; mayor en asociación maíz-frijol orgánica.
+Calabaza (frutos totales),"8,800",4.0,12.0,Cobertura suelo; pepita ~1.2 t/ha/año (10% frutos). Alta versatilidad para mercado.
+
+
+
+
+CultivoPlantas/ha (establecidas)Rendimiento por ciclo (t/ha)Rendimiento anual (t/ha, 3 ciclos)NotasMaíz criollo (grano)52,8003.510.5Forraje extra ~20 t/ha/ciclo para pollos; alineado con SPCM en litosoles.Frijol Jamapa35,2001.33.9Comercializable; mayor en asociación maíz-frijol orgánica.Calabaza (frutos totales)8,8004.012.0Cobertura suelo; pepita ~1.2 t/ha/año (10% frutos). Alta versatilidad para mercado.
+Productividad total por ha/año: ~26.4 t (maíz + frijol + calabaza frutos). Para 20 ha: ~528 t/año inicial, escalable a 250 ha (~6,600 t/año). Esto supera 10x la milpa tradicional, apoyando autosuficiencia avícola (forraje maíz) y ventas (frijol/pepita). Factores de ajuste: Monitoreo plagas con aves pastoreo reduce pérdidas 20%; biofábricas mejoran suelos en años 2+.

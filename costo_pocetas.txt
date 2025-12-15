@@ -1,0 +1,13 @@
+Estimación de Costo Inicial para el Primer Lote (20 ha)
+Basado en cotizaciones mexicanas (riego ~$45,000/ha si bomba existe; excavación manual/mecánica en litosoles ~$150,000/ha para 22k pocetas; sustrato ~$44,000/ha a $200/m³ para 220 m³/ha, 10 L/poceta), el costo inicial total es ~$4,780,000 MXN (excluye bombeo/pozo ~$100k extra si no existe). Desglose:
+
+
+ComponenteCosto por ha (MXN)Costo total 20 ha (MXN)Notas
+Excavación pocetas 150,000 3,000,000~$7/poceta (labor + equipo en rocas); incluye tolchés básicas.
+Sustrato (gallinaza + coco)44,000
+880,000
+Bulk orgánico; gallinaza de granjas propias reduce 30%.Riego goteo + fertirrigación
+45,000900,000
+Incluye venturi, mangueras, filtros; escalable.
+Total inicial 239,0004,780,000 ROI en 2-3 años con ventas pollo/frijol/pepita; subsidios SADER posibles.
+Este setup posiciona a Terra Maya como líder en integración avícola-milpa orgánica, alineado con su ethos maya-sustentable. ¿Quieres refinar con datos específicos (e.g., precios locales) o simular escenarios en el código? 
