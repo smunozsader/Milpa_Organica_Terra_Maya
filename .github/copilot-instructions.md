@@ -1,22 +1,167 @@
 # Terra Maya Orgánica - AI Coding Agent Instructions
 
 ## Project Context
-This is an agricultural productivity modeling project for **Terra Maya Orgánica**, an organic poultry farm in Yucatán, Mexico. The codebase models a technified organic milpa system (intercropped corn/beans/squash) scaled to 250 ha under irrigation.
+This is an agricultural productivity and infrastructure planning project for **Terra Maya Orgánica**, an organic poultry farm in Yucatán, Mexico. The project models a technified organic milpa system (intercropped corn/beans/squash) and analyzes the equipment acquisition strategy for establishing a 20-hectare pilot phase, scalable to 250 ha.
 
-**Business Goal**: Calculate crop yields to support self-sufficiency in poultry feed (corn fodder) and commercial sales (Jamapa beans, squash seeds).
+**Business Goals**: 
+1. Calculate crop yields to support self-sufficiency in poultry feed (corn fodder via FVH) and commercial sales (Jamapa beans, squash seeds)
+2. Optimize equipment investment strategy (own vs rent) for excavation and land clearing
+3. Minimize time to first harvest while maximizing ROI
+
+**Project Scope:**
+- **Phase 1 (current):** 20 hectares pilot implementation
+- **Future expansion:** 100-250 hectares total capacity
+- **Timeline:** 4 years to complete 20 ha with staggered subsections
+- **First harvest:** Month 17 from project start
 
 ## Core Architecture
 
-### Single-File Calculator Pattern
-- Main logic in [`ilpa_productividad.py`](ilpa_productividad.py) - a standalone Python script with embedded documentation
-- **NOT** a multi-module system - all calculations in one file for easy sharing with agronomists
-- Output format: Direct console prints, no persistent storage or APIs
+### Multi-Component Project Structure
 
-### Domain-Specific Calculations
+This project consists of:
+
+1. **Python Productivity Calculator** - [`milpa_productividad.py`](milpa_productividad.py)
+   - Standalone script for crop yield calculations
+   - Embedded documentation for agronomist use
+   - Direct console output, no databases
+
+2. **LaTeX Technical Documentation** (3 main documents):
+   - **[`analisis_tiempos_excavacion.tex`](analisis_tiempos_excavacion.tex)** (1,773 lines, 34 pages PDF)
+     * MASTER REFERENCE document for equipment strategy
+     * Analyzes 5 scenarios: rent all, buy 1 retro, buy 2 retros, buy 4 retros, mixed strategy
+     * **Recommendation:** Buy 2 CAT 420F retroexcavadoras + FAE forestry mulcher attachment
+     * Includes complete land clearing (desmonte) analysis: 3 options compared
+     * Detailed ROI calculations, breakeven analysis, timeline chronograms
+   
+   - **[`reporte_proyeccion_5anos.tex`](reporte_proyeccion_5anos.tex)** (766 lines, 18 pages PDF)
+     * 5-year financial projection for investors/stakeholders
+     * Revenue streams by crop, cost structure, cash flow analysis
+     * Includes updated equipment investment and organic land clearing section
+   
+   - **[`validacion_tecnica_academica.tex`](validacion_tecnica_academica.tex)** (1,089 lines, 22 pages PDF)
+     * Academic/technical validation of SPCM system assumptions
+     * Validates excavation costs against CICY research data
+     * Equipment investment justification with technical specifications
+     * Organic certification requirements (no-burn land clearing)
+
+3. **Supporting Documentation:**
+   - [`terra_maya_conversacion.txt`](terra_maya_conversacion.txt): Project rationale, SPCM research summary
+   - [`MEMORIA_CALCULO_PUNTO_EQUILIBRIO.md`](MEMORIA_CALCULO_PUNTO_EQUILIBRIO.md): Detailed breakeven calculation audit
+   - [`CONSISTENCIA_DOCUMENTOS.md`](CONSISTENCIA_DOCUMENTOS.md): Cross-document consistency verification report
+   - [`costo_pocetas.txt`](costo_pocetas.txt): Initial excavation cost estimates
+   - `2025. maiz continuo/*.pdf`: SPCM scientific papers (CICY researchers)
+
+### Equipment Acquisition Strategy (FINAL DECISION)
+
+**Approved Strategy:** Buy 2 CAT 420F retroexcavadoras + FAE DML/HY forestry mulcher attachment
+
+**Investment Breakdown:**
+- 2 CAT 420F used backhoes (2015-2018 models): **$3,160,000 MXN**
+  * Excavator 1: $1,450,000 + $85,000 transport + $45,000 inspection = $1,580,000
+  * Excavator 2: Same breakdown = $1,580,000
+- FAE DML/HY hydraulic forestry mulcher: **$235,000 MXN**
+- **Total equipment investment: $3,395,000 MXN**
+
+**Key advantages of this strategy:**
+- Two excavators work together on each 5-ha subsection → complete in 12 months
+- Staggered implementation: 4 subsections × 5 ha → first harvest month 17
+- FAE attachment mounts on either excavator (5-minute hydraulic coupling)
+- No-burn organic land clearing (certification requirement)
+- One operator per machine (FAE uses excavator operator, no extra personnel)
+- ROI incremental (2nd excavator): **3,425%**
+- Savings vs renting all equipment: **$310,000** for 20 ha
+- FAE savings vs Vermeer BC1000XL independent chipper: **$187,080**
+
+### Organic Land Clearing (Desmonte Orgánico)
+
+**Requirement:** Organic certification **prohibits burning** vegetation. Fields have secondary growth (acahual) that must be cleared before excavation.
+
+**Solution adopted: FAE DML/HY Forestry Mulcher Attachment**
+
+**3 Options Analyzed:**
+| Option | Investment | Total Cost (20 ha) | Advantage |
+|--------|-----------|-------------------|-----------|
+| A: Rent chipper | $0 | $314,912 | No capital commitment |
+| B: Buy Vermeer BC1000XL | $405,000 | $521,912 | Independent equipment |
+| **C: FAE attachment** ✓ | **$235,000** | **$333,912** | **Integrated, flexible** |
+
+**FAE DML/HY Specifications:**
+- Type: Hydraulic forestry mulcher for CAT 420F backhoe
+- Rotor: 1,200 RPM with tungsten carbide teeth
+- Capacity: Vegetation up to 20 cm diameter
+- Mounting: Quick-coupler, 5-minute setup on either excavator
+- Performance: 0.8 ha/day (10 days per 5-ha subsection = 0.3 months)
+- Maintenance: $1,200 per subsection (vs $2,500 for Vermeer)
+
+**7 Key Advantages over Vermeer:**
+1. Integration: Mounts on existing excavators (not standalone equipment)
+2. Personnel: Uses same excavator operator (saves $12,800/subsection vs Vermeer's 2-person crew)
+3. Lower investment: $235k vs $405k (42% cheaper)
+4. Operational flexibility: While one excavator mulches, other can start excavating
+5. Transport included: No dedicated trailer needed
+6. Scalability: Breakeven 47.6 ha; saves $2.1M in 250 ha expansion
+7. Agronomic benefit: Mulch improves 23% moisture retention in limestone soils
+
+### Domain-Specific Calculations (SPCM System)
 Based on SPCM (Sistema de Producción Continua de Maíz) research validated in Yucatán's limestone soils:
 - **Pocetas system**: 22,000 planting holes/ha with substrate mix (chicken manure + coconut husk)
 - **Polycropping**: 3 corn + 2 bean + 0.5 squash seeds per hole (intercropping pattern)
 - **3 cycles/year**: Enabled by drip irrigation + fertigation in tropical climate (no frost)
+
+### Implementation Timeline (4-Year Staggered Model)
+
+**Process per 5-ha subsection:**
+1. **Desmonte (FAE mulcher):** 0.3 months (10 days)
+2. **Excavación (2 retros together):** 12 months (110,000 pocetas)
+3. **Siembra (planting):** Immediate after excavation complete
+4. **Primera cosecha (first harvest):** +4 months from planting
+
+**Staggered schedule (20 ha = 4 subsections):**
+- Subsection 1: Clearing month 0.0 → Excavation 0.3-12.3 → **Harvest month 17**
+- Subsection 2: Clearing month 12.3 → Excavation 12.6-24.6 → **Harvest month 29**
+- Subsection 3: Clearing month 24.6 → Excavation 24.9-36.9 → **Harvest month 41**
+- Subsection 4: Clearing month 36.9 → Excavation 37.2-49.2 → **Harvest month 54**
+
+**Critical milestone:** First revenue at month 17 (vs month 46 with 1 excavator strategy)
+
+### Cost Structure (20 ha Phase 1)
+
+**Initial Investment:**
+- Equipment: $3,395,000 (2 retroexcavadoras + FAE attachment)
+- FVH module: $250,000 (pilot hydroponic fodder system)
+- **Total equipment: $3,645,000**
+
+**Per-Hectare Infrastructure Costs:**
+- Organic land clearing (FAE): $24,700/ha
+- Excavation (2 retros, 22k pocetas): $251,800/ha
+- Organic substrate: $44,000/ha
+- Drip irrigation system: $45,000/ha
+- Deep well + pump: $100,000/ha (shared infrastructure)
+- **Total infrastructure: ~$465,500/ha**
+
+**For 20 ha:**
+- Desmonte: $494,000 (20 ha × $24,700)
+- Excavación: $5,036,000 (20 ha × $251,800)
+- Sustrato: $880,000
+- Riego: $900,000
+- Pozos: $2,000,000
+- Equipment: $3,645,000
+- **Total investment: ~$13M MXN** (equipment + infrastructure)
+
+**Operational Costs (annual/ha):**
+- Seeds: $3,000
+- Organic fertilizers: $8,000
+- Irrigation operation: $5,000
+- Labor (3 cycles): $25,000
+- **Total: $41,000/ha/year**
+
+## Python Calculator (`milpa_productividad.py`)
+
+### Single-File Calculator Pattern
+- Main logic in [`milpa_productividad.py`](milpa_productividad.py) - a standalone Python script with embedded documentation
+- **NOT** a multi-module system - all calculations in one file for easy sharing with agronomists
+- Output format: Direct console prints, no persistent storage or APIs
+- **Note:** Old file `ilpa_productividad.py` was deleted as duplicate
 
 ## Key Conventions
 
@@ -48,7 +193,7 @@ Agronomists adjust these values directly - treat as configuration interface.
 ### Running Calculations
 ```powershell
 # No virtual environment needed - uses system Python
-python ilpa_productividad.py
+python milpa_productividad.py
 ```
 Expected output format:
 ```
@@ -56,6 +201,19 @@ Expected output format:
 Plantas/ha: Maíz 52800, Frijol 35200, Calabaza 8800
 Rendimiento anual (t/ha): Maíz 10.5, Frijol 3.9, Calabaza 12.0
 ...
+```
+
+### Compiling LaTeX Documents
+```powershell
+# Always compile TWICE for cross-references
+pdflatex -interaction=nonstopmode analisis_tiempos_excavacion.tex
+pdflatex -interaction=nonstopmode analisis_tiempos_excavacion.tex
+
+pdflatex -interaction=nonstopmode reporte_proyeccion_5anos.tex
+pdflatex -interaction=nonstopmode reporte_proyeccion_5anos.tex
+
+pdflatex -interaction=nonstopmode validacion_tecnica_academica.tex
+pdflatex -interaction=nonstopmode validacion_tecnica_academica.tex
 ```
 
 ### Testing Changes
@@ -98,15 +256,22 @@ rend_CULTIVO_anual = plantas_CULTIVO_ha * rend_CULTIVO_por_planta_ciclo * ciclos
 ## Expected Future Enhancements
 
 ### Cost Analysis Integration
-- **Source data**: See [`costo_pocetas.txt`](costo_pocetas.txt) for initial capital costs (~$239,000 MXN/ha)
-- Cost breakdown: Excavation ($150k/ha), substrate ($44k/ha), drip irrigation ($45k/ha)
-- **Implementation pattern**: Add cost parameters to editable section, calculate ROI and payback period
-- Example addition:
+- **Source data**: See [`MEMORIA_CALCULO_PUNTO_EQUILIBRIO.md`](MEMORIA_CALCULO_PUNTO_EQUILIBRIO.md) for detailed breakeven analysis
+- **Current strategy costs (Phase 1 - 20 ha):**
+  * Equipment: $3,395,000 (2 retros + FAE)
+  * Desmonte: $24,700/ha ($494,000 total)
+  * Excavation: $251,800/ha ($5,036,000 total)
+  * Substrate: $44,000/ha
+  * Drip irrigation: $45,000/ha
+- **Implementation pattern**: Equipment costs are sunk; focus on per-hectare operational costs for expansion scenarios
+- Example addition to Python calculator:
 ```python
-# Costos (MXN/ha)
-costo_excavacion_ha = 150000
+# Costos (MXN/ha) - ACTUALIZADO CON ESTRATEGIA 2 RETROS + FAE
+costo_desmonte_ha = 24700  # FAE forestry mulcher
+costo_excavacion_ha = 251800  # 2 retroexcavadoras trabajando juntas
 costo_sustrato_ha = 44000
 costo_riego_ha = 45000
+costo_total_infraestructura_ha = costo_desmonte_ha + costo_excavacion_ha + costo_sustrato_ha + costo_riego_ha
 # Calculate total investment and per-ton production cost
 ```
 
@@ -189,3 +354,54 @@ For stakeholder presentations, generate:
 - **Avoid over-engineering** - stakeholders prefer simple scripts over complex frameworks
 - **Validate against real-world constraints** - flag unrealistic parameters before running calculations
 - **Document assumptions clearly** - especially when extending beyond SPCM research scope
+
+## Common Modifications
+
+### Adjusting Equipment Strategy
+If analyzing alternative equipment scenarios (1 retro, 4 retros, rent all):
+1. Refer to [`analisis_tiempos_excavacion.tex`](analisis_tiempos_excavacion.tex) for complete analysis of 5 strategies
+2. Update timeline calculations: 1 retro = 24 months/5ha, 2 retros = 12 months/5ha, 4 retros = 6 months/5ha
+3. Recalculate first harvest timing: depends on when first subsection completes excavation
+4. **Current approved strategy:** 2 retros + FAE attachment (optimal cost/time balance)
+
+### Scaling Land Clearing Analysis
+To evaluate desmonte for different hectare targets:
+- **Base cost/ha:** $24,700 (FAE attachment)
+- **Alternative costs:** Rent $15,746/ha, Vermeer ownership $26,096/ha
+- **Breakeven FAE vs Vermeer:** 47.6 ha
+- **For 250 ha expansion:** FAE saves $2.1M vs Vermeer, $333k vs renting
+
+### Multi-Year Financial Projections
+When extending [`reporte_proyeccion_5anos.tex`](reporte_proyeccion_5anos.tex):
+- Year 1-4: Staggered implementation (subsections completing sequentially)
+- First revenue: Month 17 (subsection 1 harvest)
+- Cumulative revenue growth: Each subsection adds ~$1.8M/year at full production
+- Equipment already paid: Use salvage value (70-80% after 3 years) for expansions
+- Substrate replenishment: Budget $44k/ha every 3-4 years
+
+## LaTeX Document Compilation
+
+### PDF Generation Best Practices
+When compiling LaTeX documents (`.tex` files) to PDF, **always compile TWICE** to ensure:
+1. **First compilation:** Generates auxiliary files (.aux, .toc, .lof, .lot) with reference information
+2. **Second compilation:** Resolves cross-references, table of contents, and index entries
+
+**Example workflow:**
+```powershell
+# First compilation
+pdflatex -interaction=nonstopmode document.tex
+
+# Second compilation (resolves references)
+pdflatex -interaction=nonstopmode document.tex
+```
+
+**Why this matters:**
+- Single compilation leaves references as "??" or shows incorrect page numbers
+- Table of contents (TOC) requires two passes to populate correctly
+- Cross-references (\ref, \cite) need two passes to resolve
+- Professional documents require fully resolved references for stakeholder review
+
+**Special cases:**
+- After adding new sections/figures/tables: Always recompile twice
+- After bibliography changes: Compile → BibTeX → Compile → Compile (3 total)
+- If using packages like `hyperref`: Second pass ensures proper link generation

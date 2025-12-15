@@ -15,22 +15,24 @@ rend_maiz_por_planta_ciclo = 0.000066
 rend_frijol_por_planta_ciclo = 0.000037
 rend_calabaza_por_planta_ciclo = 0.000455  # Para frutos
 
-# Costos iniciales (MXN/ha) - MODELO EQUIPO PROPIO
-costo_equipo_retroexcavadora = 1350000  # CAT 420F usada (Nuevo León)
-costo_transporte_equipo = 180000  # Nuevo León → Yucatán (flete)
-costo_remolque = 50000  # Remolque cama baja 15 ton
-costo_excavacion_por_poceta = 22.89  # Diesel + operador + depreciación equipo
-costo_excavacion_ha = pocetas_por_ha * costo_excavacion_por_poceta  # ~$503,580/ha
+# Costos iniciales (MXN/ha) - MODELO EQUIPO PROPIO ACTUALIZADO
+# Basado en estrategia final: 2 CAT 420F + aditamento FAE DML/HY
+costo_equipo_2_retroexcavadoras = 3160000  # 2 CAT 420F usadas (2015-2018)
+costo_aditamento_fae = 235000  # FAE DML/HY forestry mulcher
+costo_equipo_total = costo_equipo_2_retroexcavadoras + costo_aditamento_fae  # $3,395,000
+costo_desmonte_ha = 24700  # Limpieza de vegetación con FAE (0.3 meses/5ha)
+costo_excavacion_ha = 251800  # 2 retros trabajando juntas: 12 meses por 5 ha
 costo_sustrato_ha = 44000
 costo_riego_ha = 45000
-costo_infraestructura_ha = costo_excavacion_ha + costo_sustrato_ha + costo_riego_ha
+costo_infraestructura_ha = costo_desmonte_ha + costo_excavacion_ha + costo_sustrato_ha + costo_riego_ha  # ~$465,500/ha
 
 # Costos operativos anuales (MXN/ha) - estimados para mantenimiento
 costo_semillas_ha = 3000  # Semillas criollas/orgánicas
-costo_fertilizante_organico_ha = 8000  # Compost, biofertilizantes
-costo_riego_operacion_ha = 5000  # Energía bomba, mantenimiento
+costo_fertilizacion_base_ha = 5000  # Compost sólido aplicación inicial pocetas
+costo_fertirrigacion_liquida_ha = 3000  # Biofertilizantes líquidos inyectados vía Venturi
+costo_energia_riego_ha = 5000  # Electricidad bomba + mantenimiento sistema goteo
 costo_mano_obra_ha = 25000  # Siembra, manejo, cosecha (3 ciclos)
-costo_operativo_anual_ha = costo_semillas_ha + costo_fertilizante_organico_ha + costo_riego_operacion_ha + costo_mano_obra_ha
+costo_operativo_anual_ha = costo_semillas_ha + costo_fertilizacion_base_ha + costo_fertirrigacion_liquida_ha + costo_energia_riego_ha + costo_mano_obra_ha
 
 # Precios de venta (MXN/t) - precios orgánicos Yucatán 2025
 precio_maiz_t = 8000  # Forraje uso interno (costo oportunidad vs compra externa)
@@ -71,27 +73,29 @@ print("PROYECCIÓN FINANCIERA 5 AÑOS - LOTE 20 HA")
 print("="*80)
 
 # Inversión inicial
-inversion_equipo = costo_equipo_retroexcavadora + costo_transporte_equipo + costo_remolque
-inversion_infraestructura = costo_infraestructura_ha * ha_lote
+inversion_equipo = costo_equipo_total  # 2 retros + FAE = $3,395,000
+inversion_infraestructura = costo_infraestructura_ha * ha_lote  # $465,500/ha × 20 ha
 
 # Costos adicionales de inversión inicial
 costo_pozo_bomba_total = 100000 * ha_lote  # $100k/ha infraestructura hídrica
-costo_semillas_inicial = 24000 * ha_lote  # $24k/ha semillas certificadas
-costo_operacion_ciclo1 = 109626 * ha_lote  # $109.6k/ha operación primer ciclo
+costo_modulo_fvh = 250000  # Sala FVH piloto (10k pollos/mes)
+costo_semillas_inicial = 3000 * ha_lote  # $3k/ha semillas orgánicas
 costo_certificacion = 6000 * ha_lote  # $6k/ha certificación orgánica
-contingencias = (inversion_equipo + inversion_infraestructura + costo_pozo_bomba_total + costo_semillas_inicial + costo_operacion_ciclo1 + costo_certificacion) * 0.05
+contingencias = (inversion_equipo + inversion_infraestructura + costo_pozo_bomba_total + costo_modulo_fvh + costo_semillas_inicial + costo_certificacion) * 0.05
 
-inversion_inicial = inversion_equipo + inversion_infraestructura + costo_pozo_bomba_total + costo_semillas_inicial + costo_operacion_ciclo1 + costo_certificacion + contingencias
+inversion_inicial = inversion_equipo + inversion_infraestructura + costo_pozo_bomba_total + costo_modulo_fvh + costo_semillas_inicial + costo_certificacion + contingencias
 
 print(f"\nINVERSIÓN INICIAL: ${inversion_inicial:,.0f} MXN")
-print(f"  Equipo (retroexcavadora + transp. + remolque): ${inversion_equipo:,.0f}")
+print(f"  Equipo (2 retros CAT 420F + FAE): ${inversion_equipo:,.0f}")
+print(f"  Desmonte orgánico (FAE): ${costo_desmonte_ha * ha_lote:,.0f}")
+print(f"  Excavación pocetas (2 retros): ${costo_excavacion_ha * ha_lote:,.0f}")
+print(f"  Sustrato orgánico: ${costo_sustrato_ha * ha_lote:,.0f}")
+print(f"  Sistema riego goteo: ${costo_riego_ha * ha_lote:,.0f}")
 print(f"  Infraestructura hídrica (pozo + bomba): ${costo_pozo_bomba_total:,.0f}")
-print(f"  Semillas certificadas: ${costo_semillas_inicial:,.0f}")
-print(f"  Operación primer ciclo: ${costo_operacion_ciclo1:,.0f}")
+print(f"  Módulo FVH piloto: ${costo_modulo_fvh:,.0f}")
+print(f"  Semillas orgánicas: ${costo_semillas_inicial:,.0f}")
 print(f"  Certificación orgánica: ${costo_certificacion:,.0f}")
 print(f"  Contingencias (5%): ${contingencias:,.0f}")
-print(f"  Excavación pocetas (equipo propio): ${costo_excavacion_ha * ha_lote:,.0f}")
-print(f"  Sustrato orgánico: ${costo_sustrato_ha * ha_lote:,.0f}")
 print(f"  Sistema riego: ${costo_riego_ha * ha_lote:,.0f}")
 
 # PUNTO DE EQUILIBRIO - EQUIPO PROPIO
@@ -99,18 +103,19 @@ print(f"\n{'='*80}")
 print("ANÁLISIS PUNTO DE EQUILIBRIO - EQUIPO PROPIO VS CONTRATADO")
 print(f"{'='*80}")
 costo_contratado_por_poceta = 35.25  # Costo mercado excavación contratada
-ahorro_por_poceta = costo_contratado_por_poceta - costo_excavacion_por_poceta
+costo_propio_por_poceta = 22.88  # Costo con 2 retros propias (diesel + operador + depreciación)
+ahorro_por_poceta = costo_contratado_por_poceta - costo_propio_por_poceta
 pocetas_equilibrio = inversion_equipo / ahorro_por_poceta
 ha_equilibrio = pocetas_equilibrio / pocetas_por_ha
 
 print(f"\nCosto excavación contratada:    ${costo_contratado_por_poceta:.2f}/poceta")
-print(f"Costo excavación equipo propio:  ${costo_excavacion_por_poceta:.2f}/poceta")
+print(f"Costo excavación equipo propio:  ${costo_propio_por_poceta:.2f}/poceta")
 print(f"Ahorro por poceta:               ${ahorro_por_poceta:.2f}/poceta")
 print(f"\nInversión en equipo:             ${inversion_equipo:,.0f} MXN")
 print(f"Pocetas para equilibrio:         {pocetas_equilibrio:,.0f} pocetas")
 print(f"Hectáreas para equilibrio:       {ha_equilibrio:.1f} ha")
 print(f"\nProyecto actual:                 {ha_lote:.0f} ha ({ha_lote/ha_equilibrio:.1f}x sobre equilibrio)")
-ahorro_total_vs_contratado = (costo_contratado_por_poceta * pocetas_por_ha * ha_lote) - (costo_excavacion_por_poceta * pocetas_por_ha * ha_lote + inversion_equipo)
+ahorro_total_vs_contratado = (costo_contratado_por_poceta * pocetas_por_ha * ha_lote) - (costo_propio_por_poceta * pocetas_por_ha * ha_lote + inversion_equipo)
 print(f"Ahorro neto vs contratado:       ${ahorro_total_vs_contratado:,.0f} MXN")
 print(f"{'='*80}\n")
 
