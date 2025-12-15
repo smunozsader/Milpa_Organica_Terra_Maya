@@ -28,7 +28,7 @@ smunozam@gmail.com
 
 **Guion:**
 
-> "Ingeniero, se desarrolló el planteamiento de un modelo productivo tecnificado basado en el **Sistema de Producción Continua de Maíz (SPCM)** validado por el CICY en Yucatán, adaptado a condiciones orgánicas certificables."
+> "Estimado Ing. Pérez y Pérez, se desarrolló el planteamiento de un modelo productivo tecnificado basado en el **Sistema de Producción Continua de Maíz (SPCM)** validado por el CICY en Yucatán, adaptado a condiciones orgánicas certificables."
 
 **Especificaciones Técnicas del Sistema:**
 
@@ -65,9 +65,10 @@ smunozam@gmail.com
 | **E** | Mixto (1 propia + rentar) | Mes 29 | $1,580,000 | 524% |
 
 **Desmonte Orgánico (sin quema - requisito certificación):**
-- **Opción seleccionada:** FAE DML/HY forestry mulcher (aditamento $235,000)
-- Ahorro vs chipper independiente: **$187,080**
-- Performance: 0.8 ha/día, monta en ambas retroexcavadoras
+- **Opción seleccionada:** FAE DML/HY trituradora forestal hidráulica (aditamento $235,000)
+  - **Función:** Tritura vegetación (hasta 20 cm diámetro) convirtiéndola en mantillo orgánico
+- Ahorro vs triturador independiente: **$187,080**
+- Desempeño: 0.8 ha/día, monta en ambas retroexcavadoras
 
 ---
 
@@ -79,7 +80,7 @@ smunozam@gmail.com
 
 **Inversión en Equipo:**
 - 2 CAT 420F (2015-2018, 6,000-8,000 hrs): **$3,160,000**
-- FAE DML/HY forestry mulcher: **$235,000**
+- FAE DML/HY trituradora forestal hidráulica: **$235,000**
 - **Total equipo: $3,395,000**
 
 **7 Ventajas Clave:**
@@ -286,7 +287,7 @@ Subsección 4 (5 ha):
 
 2. **PRIORIDAD ALTA - Adquisición Equipo:**
    - Iniciar búsqueda 2 CAT 420F usadas (2015-2018, <8,000 hrs)
-   - Cotizar FAE DML/HY con distribuidores certificados
+   - Cotizar trituradora forestal FAE DML/HY con distribuidores certificados
    - Presupuesto contingencia 10% equipo (~$340k)
 
 3. **PRIORIDAD MEDIA - Permisos y Certificación:**
