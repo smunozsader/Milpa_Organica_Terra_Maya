@@ -1,0 +1,1772 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{pgfgantt}
+\usetikzlibrary{patterns,shapes,arrows,positioning}
+
+\geometry{margin=1in}
+
+\definecolor{tmgreen}{RGB}{34,139,34}
+\definecolor{tmblue}{RGB}{0,102,204}
+\definecolor{tmgray}{RGB}{128,128,128}
+\definecolor{tmlight}{RGB}{240,248,240}
+\definecolor{tmwarning}{RGB}{255,165,0}
+\definecolor{tmdanger}{RGB}{220,20,60}
+\definecolor{tmyellow}{RGB}{255,215,0}
+\definecolor{tmred}{RGB}{220,20,60}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Análisis Tiempos Excavación - Terra Maya Orgánica}}
+\fancyhead[R]{\small\textit{1 vs 2 Retroexcavadoras}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\sisetup{
+  group-separator = {,},
+  group-minimum-digits = 4,
+  round-mode = places,
+  round-precision = 0
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=tmblue,
+    citecolor=tmgray,
+    urlcolor=tmblue,
+}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+  \centering
+  \vspace*{1cm}
+  
+  {\LARGE\textbf{ANÁLISIS COMPARATIVO}\par}
+  \vspace{0.5cm}
+  {\Large Tiempos de Establecimiento y Costo-Beneficio\par}
+  \vspace{0.3cm}
+  {\large 1 vs 2 Retroexcavadoras para Excavación de Pocetas\par}
+  
+  \vspace{1.5cm}
+  
+  {\normalsize\textbf{Terra Maya Orgánica}\\
+  Sistema de Milpa Tecnificada Orgánica SPCM\\
+  Timucuy, Yucatán, México\par}
+  
+  \vspace{2cm}
+  
+  \begin{tikzpicture}
+    \draw[tmgreen, line width=2pt] (0,0) -- (12,0);
+  \end{tikzpicture}
+  
+  \vspace{1cm}
+  
+  \begin{tabular}{rl}
+    \textbf{Fecha:} & 15 de diciembre, 2025 \\
+    \textbf{Objetivo:} & Evaluar viabilidad de adquirir segunda \\
+    & retroexcavadora para acelerar excavación \\
+    \textbf{Alcance:} & Análisis desde 5 ha (piloto) hasta 250 ha \\
+  \end{tabular}
+  
+  \vspace{2cm}
+  
+  \begin{center}
+  \rule{0.6\textwidth}{0.5pt}
+  
+  \vspace{0.4cm}
+  
+  \textbf{Elaborado por:}
+  
+  \vspace{0.2cm}
+  
+  {\large\textbf{MVZ Sergio Muñoz de Alba Medrano}}
+  
+  \vspace{0.15cm}
+  
+  \textit{Consultor Independiente}
+  
+  \vspace{0.15cm}
+  
+  \small Tel: +52 999 200 5550 \quad \texttt{smunozam@gmail.com}
+  
+  \vspace{0.3cm}
+  
+  \rule{0.6\textwidth}{0.5pt}
+  \end{center}
+  
+  \vfill
+  
+  {\small\textit{Documento de análisis estratégico para toma de decisiones de inversión}}
+  
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Resumen Ejecutivo}
+
+El presente análisis evalúa la conveniencia económica y operativa de adquirir retroexcavadoras CAT 420F para la excavación de pocetas en el proyecto de milpa tecnificada orgánica de Terra Maya Orgánica, con el objetivo de establecer 20 hectáreas piloto en el menor tiempo posible con el menor costo posible.
+
+\subsection{RECOMENDACIÓN ÓPTIMA PARA 20 HECTÁREAS}
+
+\begin{center}
+\colorbox{tmgreen!40}{\parbox{0.92\textwidth}{
+\vspace{0.3cm}
+\centering\textbf{\LARGE ESTRATEGIA 3: COMPRAR 2 RETROEXCAVADORAS + ADITAMENTO}
+
+\vspace{0.1cm}
+
+\textbf{\Large + MODELO ESCALONADO (4 subsecciones × 5 ha)}
+
+\vspace{0.3cm}
+
+\textbf{Esta estrategia minimiza tanto TIEMPO como COSTO}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+  \item \textbf{Equipo:} 2 CAT 420F + 1 aditamento triturador forestal FAE
+  \item \textbf{Tiempo total:} 4 años hasta 20 ha completas
+  \item \textbf{Primera cosecha:} Mes 17 - Solo 17 meses desde inicio
+  \item \textbf{Costo total 20 ha:} \$5.92M (vs \$6.23M renta total)
+  \item \textbf{Ahorro vs rentar todo:} \$310,000
+  \item \textbf{Inversión inicial:} \$3.80M (retros + aditamento)
+  \item \textbf{Punto de equilibrio:} Año 3
+  \item \textbf{ROI:} 3,425\% sobre inversión adicional de 2da retroexcavadora
+  \item \textbf{Ventaja clave:} Aditamento usa operador existente (sin personal extra)
+  \item \textbf{Beneficio ecológico:} Mulch mejora retención de humedad y MO
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{Proceso por subsección:} Desmonte (0.3 meses) → Excavación (12 meses) → Siembra → Cosecha (mes +4)
+\vspace{0.3cm}
+}}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Justificación:} Las 2 retroexcavadoras trabajan \textbf{juntas} en cada subsección de 5 hectáreas, completando la excavación en 12 meses. Esto permite sembrar cada subsección de manera escalonada, generando ingresos tempranos que financian la expansión. La primera cosecha llega en el mes 17, logrando flujo de caja positivo desde el año 3.
+
+\subsection{Hallazgos del Análisis Comparativo}
+
+\begin{itemize}
+  \item \textbf{Fase Piloto (5 ha):} Una retroexcavadora es suficiente, completando excavación en 24 meses
+  \item \textbf{Fase 1 (20 ha):} Dos retroexcavadoras son \textbf{obligatorias}, reduciendo tiempo de 8 años a 4 años
+  \item \textbf{Contratar excavación:} Más rápido (3-6 meses) pero \$360K más caro y sin activos de largo plazo
+  \item \textbf{4 retroexcavadoras:} Completa en 2 años pero inversión inicial excesiva (\$10.16M) a menos que haya urgencia comercial
+  \item \textbf{Punto crítico:} Para cualquier escala mayor o igual a 20 hectáreas, la segunda retroexcavadora es matemáticamente indispensable
+\end{itemize}
+
+\subsection{Plan de Implementación Recomendado}
+
+\textbf{Para lograr el objetivo de 20 hectáreas en el menor tiempo con el menor costo:}
+
+\begin{enumerate}
+  \item \textbf{Mes 1 (Inicio):} Adquirir \textbf{2 retroexcavadoras CAT 420F + aditamento triturador FAE} simultáneamente
+  \begin{itemize}
+    \item Inversión inicial: \$3.80M (2 retros + aditamento)
+    \item Operación año 1: \$1.00M $\rightarrow$ Total mes 1: \$4.80M
+    \item Capacitación de operadores y preparación de sitio
+  \end{itemize}
+  
+  \item \textbf{Meses 1-0.5:} Desmontar Subsección 1 (5 ha) con \textbf{aditamento triturador FAE}
+  \begin{itemize}
+    \item Una retroexcavadora usa el aditamento mulcher forestal
+    \item Roza, tumba y picado: 10 días (0.3 meses)
+    \item Mulch incorporado al terreno
+    \item Operador de retro (no requiere personal especializado adicional)
+  \end{itemize}
+  
+  \item \textbf{Meses 1-12:} Excavar Subsección 1 (5 ha) con ambas retroexcavadoras trabajando juntas
+  \begin{itemize}
+    \item Rendimiento: 360 pocetas/día (2 retros)
+    \item 110,000 pocetas en 12 meses
+  \end{itemize}
+  
+  \item \textbf{Mes 13:} Sembrar Subsección 1 mientras las 2 retros inician desmonte + excavación Subsección 2
+  
+  \item \textbf{Mes 17:} \textcolor{tmgreen}{\textbf{PRIMERA COSECHA}} - Subsección 1 genera \$6.9M/año
+  \begin{itemize}
+    \item Flujo de caja positivo empieza a financiar expansión
+  \end{itemize}
+  
+  \item \textbf{Mes 25:} Sembrar Subsección 2, iniciar desmonte + excavación Subsección 3
+  
+  \item \textbf{Mes 29:} Segunda cosecha - 10 hectáreas produciendo (\$13.8M/año)
+  
+  \item \textbf{Mes 37:} Sembrar Subsección 3, iniciar desmonte + excavación Subsección 4
+  
+  \item \textbf{Mes 41:} Tercera cosecha - 15 hectáreas produciendo (\$20.7M/año)
+  
+  \item \textbf{Mes 53:} \textcolor{tmgreen}{\textbf{20 HECTÁREAS COMPLETAS}} produciendo \$27.6M/año
+  
+  \item \textbf{Año 6+:} Evaluar expansión a 100-250 hectáreas si hay:
+  \begin{itemize}
+    \item Confirmación de contratos comerciales
+    \item Financiamiento asegurado
+    \item Mercado validado para producción masiva
+  \end{itemize}
+\end{enumerate}
+
+\vspace{0.3cm}
+
+\textbf{Escenario Alternativo (Enfoque Conservador):} Si existe incertidumbre sobre la viabilidad de escalar a 20 hectáreas:
+\begin{itemize}
+  \item Adquirir solo 1 retroexcavadora en Año 1 + \textbf{rentar trituradora o contratar desmonte}
+  \item Excavar 5 hectáreas piloto (24 meses)
+  \item Validar mercado y operación durante 12-18 meses
+  \item Si hay confirmación: adquirir 2da retroexcavadora + comprar aditamento triturador en Mes 18-24
+  \item \textbf{Costo de esta prudencia:} Retrasa primera cosecha de 20 ha por 2-3 años adicionales
+\end{itemize}
+
+\newpage
+
+\section{Parámetros Base del Análisis}
+
+\subsection{Preparación del Terreno: Desmonte Orgánico}
+
+\textbf{Contexto:} Los terrenos destinados a las 20 hectáreas presentan vegetación secundaria (acahual) que debe removerse mediante proceso \textbf{sin quema} para cumplir certificación orgánica.
+
+\subsubsection{Proceso de Desmonte Ecológico}
+
+\begin{enumerate}
+  \item \textbf{Roza y tumba manual:} Corte de vegetación arbustiva y árboles menores
+  \item \textbf{Selección de madera:} Separación para postería, leña y construcción
+  \item \textbf{Picado mecánico:} Trituración de ramas y vegetación no aprovechable
+  \item \textbf{Incorporación de mulch:} Distribución del material picado en campo
+\end{enumerate}
+
+\subsubsection{Opciones de Equipo para Desmonte}
+
+\textbf{La recomendación es usar ADITAMENTO TRITURADOR FAE para las retroexcavadoras, NO picadora Vermeer independiente.}
+
+\vspace{0.3cm}
+
+\textbf{¿Qué es el aditamento triturador FAE DML/HY?}
+
+Es un \textbf{cabezal triturador forestal (forestry mulcher)} fabricado por FAE Group (Italia), diseñado específicamente para acoplarse al brazo hidráulico de retroexcavadoras CAT 420F. El sistema funciona mediante:
+
+\begin{itemize}
+  \item \textbf{Montaje hidráulico:} Se conecta al quick-coupler de la retroexcavadora en 5 minutos
+  \item \textbf{Rotor de alta velocidad:} Tambor con dientes de carburo tungsteno (1,200 RPM)
+  \item \textbf{Sistema de trituración:} Machaca vegetación contra placa de desgaste, generando mulch fino
+  \item \textbf{Control total:} Operador de retro controla profundidad, velocidad y dirección desde cabina
+  \item \textbf{Aplicación directa:} El mulch cae directamente al suelo, sin necesidad de recolección
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{¿Por qué es SUPERIOR al Vermeer BC1000XL para este proyecto?}
+
+\begin{enumerate}
+  \item \textbf{Integración con equipo existente:}
+  \begin{itemize}
+    \item Las 2 retroexcavadoras CAT 420F ya están en el proyecto
+    \item Cualquiera de las 2 retros puede usar el aditamento (flexibilidad total)
+    \item Vermeer requiere máquina independiente + operador especializado adicional
+  \end{itemize}
+  
+  \item \textbf{Ahorro en personal:}
+  \begin{itemize}
+    \item FAE: 1 operador (el de la retro, YA contratado)
+    \item Vermeer: 2 personas (operador especializado + ayudante, personal NUEVO)
+    \item Ahorro: \$12,800 por subsección (5 ha) en nómina
+  \end{itemize}
+  
+  \item \textbf{Menor inversión inicial:}
+  \begin{itemize}
+    \item FAE DML/HY: \$235,000 (aditamento hidráulico)
+    \item Vermeer BC1000XL: \$405,000 (máquina completa usada)
+    \item Ahorro: \$170,000 (42\% menos inversión)
+  \end{itemize}
+  
+  \item \textbf{Operación simultánea con excavación:}
+  \begin{itemize}
+    \item Mientras retro \#1 tritura con FAE, retro \#2 excava pocetas
+    \item Con Vermeer independiente, las retros NO pueden trabajar durante desmonte
+    \item Resultado: Mejor aprovechamiento de equipo y personal
+  \end{itemize}
+  
+  \item \textbf{Menor mantenimiento:}
+  \begin{itemize}
+    \item FAE: Solo cambio de dientes de carburo (\$1,200/subsección)
+    \item Vermeer: Motor diesel completo, cadenas, sistema de alimentación (\$2,500/subsección)
+  \end{itemize}
+  
+  \item \textbf{Transporte incluido:}
+  \begin{itemize}
+    \item FAE viaja montado en la retro (sin costo adicional)
+    \item Vermeer requiere remolque dedicado y permisos SCT
+  \end{itemize}
+  
+  \item \textbf{Escalabilidad a 250 ha:}
+  \begin{itemize}
+    \item Punto de equilibrio FAE: 47.6 ha $\rightarrow$ amortización completa en expansión
+    \item Con Vermeer: punto equilibrio 37.2 ha, pero costo operativo mayor
+    \item Para 250 ha: FAE ahorra \textbf{\$2.1M adicionales} vs Vermeer
+  \end{itemize}
+\end{enumerate}
+
+\vspace{0.3cm}
+
+\begin{table}[h]
+\centering
+\caption{Especificaciones Comparativas: Vermeer vs FAE}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Vermeer BC1000XL} & \textbf{FAE DML/HY} & \textbf{Unidad} \\
+ & \textbf{(Opción B)} & \textbf{(Opción C - RECOMENDADA)} & \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Características técnicas:}} \\
+Tipo de equipo & Picadora autónoma & Aditamento hidráulico & --- \\
+Montaje & Independiente & Acoplado a CAT 420F & --- \\
+Fuente de potencia & Motor diesel 74 HP & Sistema hidráulico retro & --- \\
+Capacidad de picado & 25 cm diámetro & 20 cm diámetro & --- \\
+Ancho de trabajo & 38 cm (boca) & 120 cm (rotor) & --- \\
+Peso & 1,850 kg & 680 kg & --- \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Operación:}} \\
+Rendimiento & 1.0 & 0.8 & ha/día \\
+Personal requerido & 2 (op. + ayudante) & 1 (operador retro) & personas \\
+Combustible & 40 & 50* & litros/día \\
+Tiempo setup & 2 horas & 5 minutos & --- \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Económicos:}} \\
+Inversión & 405,000 & 235,000 & MXN \\
+Transporte a Yucatán & 25,000 & 15,000 & MXN \\
+Mantenimiento/5 ha & 2,500 & 1,200 & MXN \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{Tiempo por subsección (5 ha)} & \textbf{8} & \textbf{10} & \textbf{días} \\
+\rowcolor{tmgreen!30}
+\textbf{Costo operativo 5 ha} & \textbf{29,228} & \textbf{24,728} & \textbf{MXN} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{*Nota: Mayor consumo FAE compensado por eliminar motor diesel adicional del Vermeer}
+
+\vspace{0.3cm}
+
+\textbf{Conclusión:} El aditamento FAE resulta \textbf{42\% más económico en inversión inicial} y \textbf{15\% más barato en operación}, con la ventaja estratégica de aprovechar equipo y personal ya existente en el proyecto. La ligera reducción en velocidad (2 días más por subsección) es irrelevante frente al ahorro de \$187,000 en 20 hectáreas y la flexibilidad operativa que ofrece.
+
+\vspace{0.3cm}
+
+\begin{center}
+\colorbox{tmblue!20}{\parbox{0.9\textwidth}{
+\textbf{VIDEO DE DEMOSTRACIÓN TÉCNICA:}
+
+\vspace{0.2cm}
+
+FAE Forestry Mulcher en operación con retroexcavadora:
+
+\url{https://youtu.be/xqaQyRU_-Ac}
+
+\vspace{0.1cm}
+
+\textit{El video muestra el montaje hidráulico, proceso de trituración y calidad del mulch generado. Tiempo de visualización recomendado: 3-5 minutos para entender capacidades operativas.}
+\vspace{0.2cm}
+}}
+\end{center}
+
+\subsubsection{Costos de Desmonte por Hectárea: Análisis Comparativo}
+
+\begin{table}[h]
+\centering
+\caption{Inversión y Costos Operativos de Desmonte - 3 Opciones}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Opción A} & \textbf{Opción B} & \textbf{Opción C} \\
+ & \textbf{Renta} & \textbf{Picadora} & \textbf{Aditamento} \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{INVERSIÓN INICIAL}} \\
+Equipo principal & --- & 380,000 & 220,000 \\
+Transporte & --- & 25,000 & 15,000 \\
+\midrule
+\rowcolor{tmyellow!20}
+\textbf{Subtotal inversión} & \textbf{0} & \textbf{405,000} & \textbf{235,000} \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{COSTO OPERATIVO POR SUBSECCIÓN (5 ha)}} \\
+Renta equipo (8 días × \$6,500) & 52,000 & --- & --- \\
+Operador especializado & 9,600 & 9,600 & --- \\
+Ayudante & 3,200 & 3,200 & --- \\
+Operador retroexcavadora & --- & --- & 9,600 \\
+Diesel (320 L × \$24.77) & 7,928 & 7,928 & 7,928 \\
+Roza manual previa & 6,000 & 6,000 & 6,000 \\
+Mantenimiento preventivo & --- & 2,500 & 1,200 \\
+\midrule
+\rowcolor{tmyellow!30}
+\textbf{Costo operativo 5 ha} & \textbf{78,728} & \textbf{29,228} & \textbf{24,728} \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{COSTO TOTAL 20 HECTÁREAS (4 subsecciones)}} \\
+Inversión inicial & 0 & 405,000 & 235,000 \\
+Operación 4 subsecciones & 314,912 & 116,912 & 98,912 \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{TOTAL 20 ha} & \textbf{314,912} & \textbf{521,912} & \textbf{333,912} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Especificaciones por opción:}
+
+\begin{itemize}
+  \item \textbf{Opción A - Renta:} Vermeer BC1000XL independiente, operador especializado externo
+  \item \textbf{Opción B - Picadora propia:} Vermeer BC1000XL usada, mayor capacidad (25 cm diámetro)
+  \item \textbf{Opción C - Aditamento triturador:} Forestry mulcher para CAT 420F (modelo FAE DML/HY), 20 cm diámetro
+\end{itemize}
+
+\textbf{Análisis comparativo:}
+
+\begin{table}[h]
+\centering
+\caption{Comparación Económica Opciones de Desmonte}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Métrica} & \textbf{Renta} & \textbf{Picadora} & \textbf{Aditamento} \\
+\midrule
+Costo total 20 ha & 314,912 & 521,912 & 333,912 \\
+Ahorro vs renta & Baseline & -207,000 & -19,000 \\
+Punto equilibrio (ha) & --- & 37.2 & 47.6 \\
+Valor residual 5 años & 0 & 200,000 & 120,000 \\
+Costo neto 20 ha & 314,912 & 321,912 & 213,912 \\
+\midrule
+\rowcolor{tmgreen!40}
+\multicolumn{4}{@{}l}{\textbf{RECOMENDACIÓN: Opción C (Aditamento) para 20-250 ha}} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Justificación Opción C (Aditamento para Retroexcavadoras):}
+
+\begin{itemize}
+  \item \textbf{Inversión 42\% menor} que picadora independiente (\$235k vs \$405k)
+  \item \textbf{Aprovecha operador existente} de retroexcavadora (no requiere personal adicional)
+  \item \textbf{Menor costo total para 20 ha:} \$334k vs \$315k renta (solo \$19k diferencia)
+  \item \textbf{Punto de equilibrio:} 48 hectáreas $\rightarrow$ alcanzable en expansión 100-250 ha
+  \item \textbf{Flexibilidad operativa:} Cualquiera de las 2 retroexcavadoras puede usarlo
+  \item \textbf{Beneficio ecológico:} Mismo mulch incorporado que picadora dedicada
+  \item \textbf{Valor residual:} \$120,000 tras 5 años de uso
+\end{itemize}
+
+\textbf{Limitación:} Rendimiento 20\% menor que picadora dedicada (0.8 ha/día vs 1.0 ha/día), pero compensado por integración con equipo existente.
+
+\subsection{Rendimiento Operativo por Retroexcavadora}
+
+Basado en pruebas de campo con CAT 420F en suelo litosol yucateco y análisis de costos de equipo propio previamente validado.
+
+\begin{table}[h]
+\centering
+\caption{Parámetros Técnicos de Excavación}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} & \textbf{Unidad} \\
+\midrule
+Pocetas por hectárea & 22,000 & pocetas/ha \\
+Rendimiento diario (1 retro) & 180 & pocetas/día \\
+Horas laborables por día & 8 & horas \\
+Días hábiles por mes & 25.4 & días \\
+Tiempo por poceta & 0.046 & horas (2.76 min) \\
+\midrule
+\rowcolor{tmlight}
+\textbf{Tiempo por hectárea (1 retro)} & \textbf{122.2} & \textbf{días} \\
+\rowcolor{tmlight}
+\textbf{Equivalente en meses} & \textbf{4.8} & \textbf{meses} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Supuestos adicionales:}
+\begin{itemize}
+  \item Factor de clima adverso (temporada lluvias): 10\% de días no laborables adicionales
+  \item Mantenimiento preventivo: 5 días/mes de inactividad programada
+  \item Rendimiento combinado 2 retros: 360 pocetas/día (asumiendo no interferencia entre equipos)
+\end{itemize}
+
+\subsection{Inversión por Equipo}
+
+\begin{table}[h]
+\centering
+\caption{Inversión Requerida por Retroexcavadora}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Unitario (MXN)} & \textbf{1 Retro} & \textbf{2 Retros} \\
+\midrule
+CAT 420F usada (2015--2018) & 1,350,000 & 1,350,000 & 2,700,000 \\
+Transporte NL → Yucatán & 180,000 & 180,000 & 360,000 \\
+Trailer remolque & 50,000 & 50,000 & 100,000 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{TOTAL INVERSIÓN} & --- & \textbf{1,580,000} & \textbf{3,160,000} \\
+\midrule
+\textit{Inversión adicional 2da retro} & --- & --- & \textit{+1,580,000} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Costos Operativos Anuales}
+
+\begin{table}[h]
+\centering
+\caption{Costos Operativos por Retroexcavadora}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Costo Anual (MXN)} \\
+\midrule
+Diesel (2,500 litros/año por \$24.77/L) & 61,925 \\
+Mantenimiento preventivo & 80,000 \\
+Operador (12 meses por \$15,000/mes) & 180,000 \\
+Seguros y depreciación & 158,000 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{TOTAL OPERATIVO/AÑO} & \textbf{479,925} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Costo operativo adicional segunda retroexcavadora:}
+\begin{itemize}
+  \item Operación durante excavación 5 hectáreas piloto (1 año): \$479,925
+  \item Operación durante excavación 20 hectáreas (4 años): \$1,919,700
+\end{itemize}
+
+\subsection{Costos de Desmonte (Aditamento Triturador)}
+
+\begin{table}[h]
+\centering
+\caption{Inversión y Operación Aditamento Triturador Forestal}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Costo (MXN)} \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{INVERSIÓN INICIAL}} \\
+Aditamento FAE DML/HY (mulcher forestal) & 220,000 \\
+Transporte a Yucatán & 15,000 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{Subtotal inversión aditamento} & \textbf{235,000} \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{COSTO OPERATIVO POR SUBSECCIÓN (5 ha)}} \\
+Operador retroexcavadora (10 días × \$960/día) & 9,600 \\
+Diesel (400 L × \$24.77, mayor consumo con aditamento) & 9,908 \\
+Roza manual previa (4 jornales/ha × 5 ha × \$300) & 6,000 \\
+Mantenimiento aditamento & 1,200 \\
+\midrule
+\rowcolor{tmyellow!30}
+\textbf{Subtotal operación 5 ha} & \textbf{26,708} \\
+\midrule
+\textbf{Total 4 subsecciones (20 ha)} & \textbf{106,832} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Análisis comparativo desmonte (20 hectáreas):}
+\begin{itemize}
+  \item \textbf{Rentar picadora:} \$314,912
+  \item \textbf{Comprar picadora independiente:} \$521,912 (inversión + operación)
+  \item \textbf{Aditamento para retros:} \$341,832 (inversión + operación)
+  \item \textbf{AHORRO aditamento vs renta:} Solo \$26,920 más, PERO:
+  \begin{itemize}
+    \item Equipo queda para expansión 100-250 ha (ahorro futuro \$2M+)
+    \item Control total de calendario, sin depender de rentas
+    \item Usa operador existente (sin personal adicional)
+    \item Flexibilidad: cualquiera de las 2 retros puede usarlo
+    \item Valor residual: ~\$120,000 tras 5 años
+  \end{itemize}
+  \item \textbf{AHORRO aditamento vs picadora propia:} \$180,080
+\end{itemize}
+
+\newpage
+
+\section{Comparación de Tiempos por Escala}
+
+\subsection{Escenario 1: Fase Piloto 5 Hectáreas}
+
+\subsubsection{Con 1 Retroexcavadora}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Pocetas totales & 110,000 \\
+Días de excavación & 611.1 días \\
+Meses de excavación & 24.1 meses \\
+\rowcolor{tmlight}
+\textbf{Tiempo real (incluye clima)} & \textbf{26 meses (2 años 2 meses)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Con 2 Retroexcavadoras}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Pocetas por día (combinadas) & 360 pocetas/día \\
+Días de excavación & 305.6 días \\
+Meses de excavación & 12.0 meses \\
+\rowcolor{tmlight}
+\textbf{Tiempo real (incluye clima)} & \textbf{13 meses (1 año 1 mes)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\colorbox{tmlight}{\parbox{0.9\textwidth}{
+\textbf{Reducción de tiempo:} 13 meses (\textbf{54\% más rápido})
+}}
+\end{center}
+
+\subsection{Escenario 2: Fase 1 - 20 Hectáreas}
+
+\subsubsection{Con 1 Retroexcavadora}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Pocetas totales & 440,000 \\
+Días de excavación & 2,444.4 días \\
+Meses de excavación & 96.2 meses \\
+\rowcolor{tmdanger!30}
+\textbf{Tiempo real (incluye imprevistos)} & \textbf{102 meses (8 años 6 meses)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\colorbox{tmdanger!20}{\parbox{0.9\textwidth}{
+\textbf{EVALUACIÓN:} Tiempo excesivo. Riesgo de obsolescencia del modelo y pérdida de ventana de mercado. Ingresos diferidos 4+ años representan costo de oportunidad de \textbf{\$55.3 millones}.
+}}
+\end{center}
+
+\subsubsection{Con 2 Retroexcavadoras}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Pocetas por día (combinadas) & 360 pocetas/día \\
+Días de excavación & 1,222.2 días \\
+Meses de excavación & 48.1 meses \\
+\rowcolor{tmgreen!30}
+\textbf{Tiempo real (incluye imprevistos)} & \textbf{51 meses (4 años 3 meses)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\colorbox{tmgreen!20}{\parbox{0.9\textwidth}{
+\textbf{Reducción de tiempo:} 51 meses (\textbf{54\% más rápido})\\
+\textbf{Beneficio estratégico:} Permite comenzar ingresos comerciales completos año 5 vs año 9
+}}
+\end{center}
+
+\subsection{Escenario 3: Fase 2 - 100 Hectáreas}
+
+\begin{table}[h]
+\centering
+\caption{Comparación de Tiempos - 100 Hectáreas (2,200,000 pocetas)}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+\textbf{Equipamiento} & \textbf{Días} & \textbf{Años} & \textbf{Evaluación} \\
+\midrule
+1 Retroexcavadora & 12,222 & 40.1 & \cellcolor{tmdanger!30}INVIABLE \\
+2 Retroexcavadoras & 6,111 & 20.0 & \cellcolor{tmwarning!30}MARGINAL \\
+4 Retroexcavadoras & 3,056 & 10.0 & \cellcolor{tmwarning!30}ACEPTABLE \\
+\rowcolor{tmgreen!30}
+\textbf{5 Retroexcavadoras} & \textbf{2,444} & \textbf{8.0} & \textbf{ÓPTIMO} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Recomendación para 100 ha:} Mínimo 4--5 retroexcavadoras para completar en plazo razonable (8--10 años). Una sola retro excede vida útil del equipo (15 años).
+
+\subsection{Escenario 4: Proyecto Completo 250 Hectáreas}
+
+\begin{table}[h]
+\centering
+\caption{Análisis de Escalamiento Máximo - 250 Hectáreas (5,500,000 pocetas)}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+\textbf{Equipamiento} & \textbf{Días} & \textbf{Años} & \textbf{Evaluación} \\
+\midrule
+1 Retroexcavadora & 30,556 & 100.2 & \cellcolor{tmdanger!30}INVIABLE \\
+2 Retroexcavadoras & 15,278 & 50.1 & \cellcolor{tmdanger!30}INVIABLE \\
+5 Retroexcavadoras & 6,111 & 20.0 & \cellcolor{tmwarning!30}MARGINAL \\
+\rowcolor{tmgreen!30}
+\textbf{8 Retroexcavadoras} & \textbf{3,819} & \textbf{12.5} & \textbf{VIABLE} \\
+\rowcolor{tmgreen!30}
+\textbf{10 Retroexcavadoras} & \textbf{3,056} & \textbf{10.0} & \textbf{ÓPTIMO} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Estrategia recomendada para 250 ha:} Modelo escalonado con adquisición gradual de 8--10 retroexcavadoras en fases, financiando expansión con ingresos generados. No adquirir todas simultáneamente para evitar capital inmovilizado.
+
+\newpage
+
+\section{Diagramas de Gantt Comparativos}
+
+\subsection{Fase Piloto 5 Hectáreas}
+
+\subsubsection{Opción A: 1 Retroexcavadora (26 meses)}
+
+\begin{figure}[h]
+\centering
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.35cm,
+  y unit title=0.6cm,
+  y unit chart=0.5cm,
+  title height=1,
+  bar/.append style={fill=tmblue},
+  bar height=0.6,
+  milestone/.append style={fill=tmgreen}
+]{1}{26}
+\gantttitle{Año 1}{12}
+\gantttitle{Año 2}{12}
+\gantttitle{Año 3}{2} \\
+\gantttitlelist{1,...,26}{1} \\
+\ganttbar{Excavación}{1}{24} \\
+\ganttbar{Instalación sustrato}{3}{25} \\
+\ganttbar{Sistema riego}{5}{26} \\
+\ganttbar{Siembra escalonada}{7}{26} \\
+\ganttmilestone{Cosecha 1 (Ha 1)}{11} \\
+\ganttmilestone{Cosecha 2 (Ha 2-3)}{15} \\
+\ganttmilestone{Cosecha 3 (Ha 4-5)}{19} \\
+\end{ganttchart}
+\caption{Cronograma 5 hectáreas con 1 retroexcavadora}
+\end{figure}
+
+\subsubsection{Opción B: 2 Retroexcavadoras (13 meses)}
+
+\begin{figure}[h]
+\centering
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.7cm,
+  y unit title=0.6cm,
+  y unit chart=0.5cm,
+  title height=1,
+  bar/.append style={fill=tmgreen},
+  bar height=0.6,
+  milestone/.append style={fill=tmgreen}
+]{1}{13}
+\gantttitle{Año 1}{12}
+\gantttitle{Año 2}{1} \\
+\gantttitlelist{1,...,13}{1} \\
+\ganttbar{Excavación (2 retros)}{1}{12} \\
+\ganttbar{Instalación sustrato}{2}{13} \\
+\ganttbar{Sistema riego}{4}{13} \\
+\ganttbar{Siembra simultánea}{6}{13} \\
+\ganttmilestone{Cosecha completa 5 ha}{10} \\
+\end{ganttchart}
+\caption{Cronograma 5 hectáreas con 2 retroexcavadoras}
+\end{figure}
+
+\begin{center}
+\colorbox{tmlight}{\parbox{0.9\textwidth}{
+\textbf{Ganancia temporal:} 13 meses de adelanto\\
+\textbf{Impacto:} Primera cosecha completa en mes 10 vs mes 23
+}}
+\end{center}
+
+\newpage
+
+\subsection{Fase 1 - 20 Hectáreas}
+
+\subsubsection{Opción A: 1 Retroexcavadora (102 meses = 8.5 años)}
+
+\begin{figure}[h]
+\centering
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.14cm,
+  y unit title=0.6cm,
+  y unit chart=0.5cm,
+  title height=1,
+  bar/.append style={fill=tmdanger},
+  bar height=0.6
+]{1}{102}
+\gantttitle{Excavación y Establecimiento 20 Hectáreas - 1 Retroexcavadora}{102} \\
+\gantttitle{Año 1}{12}\gantttitle{Año 2}{12}\gantttitle{Año 3}{12}\gantttitle{Año 4}{12}\gantttitle{Año 5}{12}\gantttitle{Año 6}{12}\gantttitle{Año 7}{12}\gantttitle{Año 8}{12}\gantttitle{Año 9}{6} \\
+\ganttbar{Excavación}{1}{96} \\
+\ganttbar{Sustrato}{6}{100} \\
+\ganttbar{Riego}{10}{102} \\
+\ganttbar{Siembra escalonada}{14}{102} \\
+\end{ganttchart}
+\caption{Cronograma 20 hectáreas con 1 retroexcavadora - \textcolor{tmdanger}{TIEMPO CRÍTICO}}
+\end{figure}
+
+\subsubsection{Opción B: 2 Retroexcavadoras (51 meses = 4.25 años)}
+
+\begin{figure}[h]
+\centering
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.28cm,
+  y unit title=0.6cm,
+  y unit chart=0.5cm,
+  title height=1,
+  bar/.append style={fill=tmgreen},
+  bar height=0.6
+]{1}{51}
+\gantttitle{Excavación y Establecimiento 20 Hectáreas - 2 Retroexcavadoras}{51} \\
+\gantttitle{Año 1}{12}\gantttitle{Año 2}{12}\gantttitle{Año 3}{12}\gantttitle{Año 4}{12}\gantttitle{Año 5}{3} \\
+\ganttbar{Excavación (2 retros)}{1}{48} \\
+\ganttbar{Sustrato}{4}{50} \\
+\ganttbar{Riego}{6}{51} \\
+\ganttbar{Siembra simultánea}{8}{51} \\
+\end{ganttchart}
+\caption{Cronograma 20 hectáreas con 2 retroexcavadoras - \textcolor{tmgreen}{ÓPTIMO}}
+\end{figure}
+
+\begin{center}
+\colorbox{tmgreen!20}{\parbox{0.9\textwidth}{
+\textbf{Ganancia temporal:} 51 meses (4.25 años) de adelanto\\
+\textbf{Valor económico:} Ingresos comerciales completos año 5 vs año 9\\
+\textbf{Ingresos adelantados:} \$13,836,000/año por 4 años = \textbf{\$55,344,000}
+}}
+\end{center}
+
+\newpage
+
+\section{Análisis Financiero Costo-Beneficio}
+
+\subsection{Inversión Total Comparativa}
+
+\begin{table}[h]
+\centering
+\caption{Inversión y Costos Operativos - Comparación 1 vs 2 Retros + Aditamento}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Concepto} & \textbf{1 Retro} & \textbf{2 Retros} \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Inversión inicial:}} \\
+Retroexcavadoras y transporte & 1,580,000 & 3,160,000 \\
+Aditamento triturador FAE & 235,000 & 235,000 \\
+\midrule
+\rowcolor{tmyellow!20}
+\textbf{Subtotal inversión equipo} & \textbf{1,815,000} & \textbf{3,395,000} \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Costos operativos (Fase 5 ha):}} \\
+Operación retros 1 año excavación & 479,925 & 959,850 \\
+Operación aditamento (1 subsección) & 26,708 & 26,708 \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Costos operativos (Fase 20 ha):}} \\
+Operación retros 8 años excavación & 3,839,400 & --- \\
+Operación retros 4 años excavación & --- & 1,919,700 \\
+Operación aditamento (4 subsecciones) & 106,832 & 106,832 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{TOTAL (Fase 5 ha)} & \textbf{2,321,633} & \textbf{4,381,558} \\
+\rowcolor{tmlight}
+\textbf{TOTAL (Fase 20 ha)} & \textbf{5,761,232} & \textbf{5,421,532} \\
+\midrule
+\textit{Inversión adicional 2da retro} & --- & +2,059,925 (5 ha) \\
+& & +\textbf{-339,700} (20 ha)* \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{*Nota: En escala 20 ha, opción 2 retros resulta \textbf{menos costosa} (\$340k ahorro) que 1 retro debido a reducción de años operativos (4 vs 8 años de costos de mantenimiento/operador). Aditamento se amortiza completamente en expansión a 100-250 ha.}
+
+\subsection{Ingresos Adelantados por Tiempo Ganado}
+
+\subsubsection{Escenario 5 Hectáreas}
+
+\textbf{Opción A (1 retro):} Primera cosecha completa mes 27 (año 3)\\
+\textbf{Opción B (2 retros):} Primera cosecha completa mes 14 (año 2)
+
+\textbf{Adelanto de ingresos:} 13 meses
+
+\begin{align*}
+\text{Ingreso bruto por hectárea/año} &= \$691,800 \\
+\text{Ingreso bruto 5 ha/año} &= \$3,459,000 \\
+\text{Ingresos adelantados (13 meses)} &= \$3,459,000 \times \frac{13}{12} = \$3,746,750
+\end{align*}
+
+\subsubsection{Escenario 20 Hectáreas}
+
+\textbf{Opción A (1 retro):} Producción completa año 9\\
+\textbf{Opción B (2 retros):} Producción completa año 5
+
+\textbf{Adelanto de ingresos:} 4 años completos
+
+\begin{align*}
+\text{Ingreso bruto 20 ha/año} &= \$13,836,000 \\
+\text{Ingresos adelantados (4 años)} &= \$13,836,000 \times 4 = \textbf{\$55,344,000}
+\end{align*}
+
+\newpage
+
+\subsection{Análisis Costo-Beneficio Neto por Escala}
+
+\subsubsection{Fase Piloto 5 Hectáreas}
+
+\begin{table}[h]
+\centering
+\caption{Costo-Beneficio Neto - 5 Hectáreas}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Valor (MXN)} \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Opción A: 1 Retroexcavadora}} \\
+Inversión total & 2,059,925 \\
+Tiempo hasta cosecha completa & 27 meses \\
+Ingresos año 3 & 3,459,000 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Opción B: 2 Retroexcavadoras}} \\
+Inversión total & 4,119,850 \\
+Tiempo hasta cosecha completa & 14 meses \\
+Ingresos año 2 & 3,459,000 \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Análisis incremental Opción B:}} \\
+Ingresos adelantados (13 meses) & +3,746,750 \\
+Menos: Inversión adicional & -2,059,925 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{BENEFICIO NETO} & \textbf{+1,686,825} \\
+\midrule
+\textbf{ROI de 2da retroexcavadora} & \textbf{81.9\%} \\
+\textbf{Payback (meses de ingresos)} & \textbf{7.2 meses} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretación:} La segunda retroexcavadora se paga a sí misma en 7.2 meses de ingresos adelantados. Sin embargo, para escala pequeña (5 ha) el beneficio neto de \$1.69M puede no justificar la complejidad operativa de manejar dos equipos simultáneamente.
+
+\subsubsection{Fase 1 - 20 Hectáreas}
+
+\begin{table}[h]
+\centering
+\caption{Costo-Beneficio Neto - 20 Hectáreas}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Valor (MXN)} \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Opción A: 1 Retroexcavadora}} \\
+Inversión + operación 8 años & 5,419,400 \\
+Producción completa año 9 & --- \\
+Ingresos diferidos 4 años & -55,344,000 \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Opción B: 2 Retroexcavadoras}} \\
+Inversión + operación 4 años & 5,079,700 \\
+Producción completa año 5 & --- \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Análisis incremental Opción B:}} \\
+Ingresos adelantados (4 años) & +55,344,000 \\
+Ahorro en costos operativos & +339,700 \\
+Menos: Inversión adicional inicial & -1,580,000 \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{BENEFICIO NETO} & \textbf{+54,103,700} \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{ROI de 2da retroexcavadora} & \textbf{3,425\%} \\
+\textbf{Payback (meses de ingresos)} & \textbf{1.4 meses} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\colorbox{tmgreen!20}{\parbox{0.9\textwidth}{
+\textbf{CONCLUSIÓN CRÍTICA:} Para escala 20 hectáreas, la segunda retroexcavadora es \textbf{matemáticamente obligatoria}. El beneficio neto de \$54.1 millones sobre inversión adicional de \$1.58 millones representa un ROI de 3,425\%, haciendo la decisión irrefutable desde perspectiva financiera.
+}}
+\end{center}
+
+\newpage
+
+\section{Escenario Acelerado: 20 Hectáreas en 2 Años}
+
+\subsection{Análisis "What If" - Requerimiento Urgente}
+
+\textbf{Pregunta estratégica:} ¿Qué pasaría si necesitamos completar las 20 hectáreas en solo 2 años en lugar de 4 años?
+
+Este escenario surge cuando existen compromisos comerciales anticipados, contratos de suministro firmados, o ventanas de mercado críticas que requieren acelerar drásticamente el establecimiento del proyecto.
+
+\subsection{Cálculo de Equipamiento Requerido}
+
+\begin{table}[h]
+\centering
+\caption{Parámetros de Escenario Acelerado}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Superficie objetivo & 20 hectáreas \\
+Pocetas totales & 440,000 \\
+Plazo requerido & 2 años (24 meses) \\
+Días hábiles disponibles & 609.6 días \\
+\midrule
+\rowcolor{tmlight}
+\textbf{Pocetas por día requeridas} & \textbf{721.8} \\
+\midrule
+Rendimiento por retroexcavadora & 180 pocetas/día \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{Retroexcavadoras necesarias} & \textbf{4 equipos} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Verificación del cálculo:}
+\begin{align*}
+\text{Capacidad diaria (4 retros)} &= 4 \times 180 = 720 \text{ pocetas/día} \\
+\text{Días requeridos} &= 440,000 \div 720 = 611.1 \text{ días} \\
+\text{Meses requeridos} &= 611.1 \div 25.4 = \textbf{24.06 meses} \quad \checkmark
+\end{align*}
+
+\subsection{Inversión y Costos Operativos}
+
+\begin{table}[h]
+\centering
+\caption{Inversión Total Escenario 4 Retroexcavadoras}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Unitario (MXN)} & \textbf{Total 4 Retros} \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Inversión inicial:}} \\
+CAT 420F usada (4 unidades) & 1,350,000 & 5,400,000 \\
+Transporte NL → Yucatán (4 viajes) & 180,000 & 720,000 \\
+Trailers remolque (4 unidades) & 50,000 & 200,000 \\
+\midrule
+\textit{Subtotal inversión equipo} & --- & \textit{6,320,000} \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Costos operativos 2 años:}} \\
+Operación por retro/año & 479,925 & --- \\
+Operación 4 retros × 2 años & --- & 3,839,400 \\
+\midrule
+\rowcolor{tmlight}
+\textbf{INVERSIÓN TOTAL} & --- & \textbf{10,159,400} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Análisis Costo-Beneficio vs Opción 2 Retros}
+
+\begin{table}[h]
+\centering
+\caption{Comparación 2 Retros (4 años) vs 4 Retros (2 años)}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Concepto} & \textbf{2 Retros} & \textbf{4 Retros} \\
+\midrule
+Tiempo hasta producción completa & 51 meses & 24 meses \\
+Inversión + operación & \$5,079,700 & \$10,159,400 \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Análisis incremental opción 4 retros:}} \\
+Inversión adicional & --- & +\$5,079,700 \\
+Tiempo ahorrado & --- & 27 meses \\
+\midrule
+Ingresos adelantados (27 meses) & --- & \$31,140,750 \\
+\multicolumn{3}{@{}l}{\quad (\$13,836,000/año × 2.25 años)} \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{BENEFICIO NETO} & --- & \textbf{+\$26,061,050} \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{ROI inversión adicional} & --- & \textbf{513\%} \\
+\textbf{Payback (meses de ingresos)} & --- & \textbf{4.4 meses} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Comparación con Todas las Opciones}
+
+\begin{table}[h]
+\centering
+\caption{Resumen Comparativo - Todas las Opciones para 20 Hectáreas}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Opción} & \textbf{Tiempo} & \textbf{Inversión} & \textbf{Ingresos} & \textbf{ROI vs} \\
+ & \textbf{(meses)} & \textbf{Total (M)} & \textbf{Adelantados} & \textbf{anterior} \\
+\midrule
+\rowcolor{tmdanger!20}
+1 Retro & 102 & \$5.42 & --- & --- \\
+\rowcolor{tmgreen!20}
+2 Retros & 51 & \$5.08 & \$55.3M & 3,425\% \\
+\rowcolor{tmgreen!30}
+\textbf{4 Retros} & \textbf{24} & \textbf{\$10.16} & \textbf{\$31.1M} & \textbf{513\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Consideraciones Operativas}
+
+\textbf{Ventajas del escenario 4 retroexcavadoras:}
+\begin{itemize}
+  \item \textbf{Cumplimiento de plazos críticos:} Permite honrar compromisos comerciales anticipados
+  \item \textbf{Ventana de mercado:} Aprovecha precios premium de productos orgánicos antes de saturación
+  \item \textbf{Flujo de caja acelerado:} Ingresos completos año 3 vs año 5
+  \item \textbf{Redundancia operativa:} Falla de 1 equipo no detiene totalmente el proyecto (75\% capacidad remanente)
+  \item \textbf{Flexibilidad de asignación:} Permite frentes de trabajo simultáneos en diferentes lotes
+\end{itemize}
+
+\textbf{Desafíos del escenario 4 retroexcavadoras:}
+\begin{itemize}
+  \item \textbf{Capital inicial elevado:} Requiere \$6.32M en equipos vs \$3.16M (doble inversión inicial)
+  \item \textbf{Complejidad logística:} Supervisión de 4 operadores simultáneos, coordinación de turnos
+  \item \textbf{Presión en suministro de insumos:} Sustrato, sistema de riego y plántulas deben seguir ritmo acelerado
+  \item \textbf{Subutilización post-proyecto:} 4 equipos ociosos después de completar 20 hectáreas
+  \item \textbf{Gestión de mantenimiento:} 4 programas de mantenimiento preventivo simultáneos
+\end{itemize}
+
+\subsection{Estrategia de Mitigación}
+
+\textbf{Para justificar inversión en 4 retroexcavadoras:}
+
+\begin{enumerate}
+  \item \textbf{Contrato comercial confirmado:} Acuerdo de suministro con cadena orgánica que requiere volumen año 3
+  \item \textbf{Expansión planificada:} Certeza de escalar a 50--100 hectáreas en años siguientes (equipos no quedan ociosos)
+  \item \textbf{Modelo de consorcio:} Asociación con 2--3 productores vecinos para compartir costos y equipos
+  \item \textbf{Servicios externos:} Ofrecer excavación comercial SPCM regional para mantener equipos productivos
+  \item \textbf{Venta escalonada:} Vender 2 retroexcavadoras después de completar hectáreas si no hay expansión (recuperación 70--80\%)
+\end{enumerate}
+
+\textbf{Recomendación escenario acelerado:}
+
+\begin{center}
+\colorbox{tmgreen!20}{\parbox{0.92\textwidth}{
+\vspace{0.3cm}
+\textbf{SI HAY CERTEZA DE:}
+\begin{itemize}
+  \item Contrato comercial firmado que requiere producción completa año 3, O
+  \item Expansión confirmada a 50+ hectáreas en años 4--6, O
+  \item Asociación con otros productores para compartir equipos
+\end{itemize}
+
+\textbf{ENTONCES:} La inversión en 4 retroexcavadoras está \textbf{plenamente justificada} con ROI de 513\% y beneficio neto de \$26.1 millones sobre inversión adicional de \$5.08 millones.
+
+\vspace{0.3cm}
+
+\textbf{SI NO HAY CERTEZA:} Mantener estrategia prudente de 2 retroexcavadoras (4 años) y evaluar adquisición de retros 3--4 al mes 18 si surgen oportunidades comerciales concretas.
+\vspace{0.3cm}
+}}
+\end{center}
+
+\newpage
+
+\section{Análisis de Riesgos}
+
+\subsection{Riesgos de Operar con 1 Retroexcavadora}
+
+\begin{table}[h]
+\centering
+\caption{Matriz de Riesgos - 1 Retroexcavadora}
+\begin{tabular}{@{}p{0.35\textwidth}p{0.15\textwidth}p{0.4\textwidth}@{}}
+\toprule
+\textbf{Riesgo} & \textbf{Probabilidad} & \textbf{Impacto} \\
+\midrule
+\rowcolor{tmdanger!20}
+Falla mecánica crítica detiene totalmente el proyecto & Media & \textbf{ALTO:} Sin equipo de respaldo, pausa de 2--4 semanas por reparaciones \\
+\midrule
+\rowcolor{tmwarning!20}
+Costo de oportunidad por ingresos diferidos (20 ha) & Alta & \textbf{CRÍTICO:} \$55.3M en ingresos pospuestos 4 años \\
+\midrule
+\rowcolor{tmwarning!20}
+Presión de plazos sin capacidad de aceleración & Media & \textbf{MEDIO:} Imposibilidad de cumplir compromisos comerciales anticipados \\
+\midrule
+Obsolescencia del modelo durante excavación prolongada & Baja & \textbf{MEDIO:} 8 años de proyecto pueden requerir actualización técnica a mitad \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Riesgos de Operar con 2 Retroexcavadoras}
+
+\begin{table}[h]
+\centering
+\caption{Matriz de Riesgos - 2 Retroexcavadoras}
+\begin{tabular}{@{}p{0.35\textwidth}p{0.15\textwidth}p{0.4\textwidth}@{}}
+\toprule
+\textbf{Riesgo} & \textbf{Probabilidad} & \textbf{Impacto} \\
+\midrule
+\rowcolor{tmwarning!20}
+Sobre-inversión si proyecto no escala a 20 ha & Media & \textbf{MEDIO:} 2da retro sub-utilizada, capital inmovilizado \$1.58M \\
+\midrule
+Complejidad operativa (2 operadores simultáneos) & Baja & \textbf{BAJO:} Requiere coordinación logística y supervisión adicional \\
+\midrule
+Mantenimiento duplicado aumenta costos fijos & Alta & \textbf{BAJO:} +\$480k/año, pero compensado por ingresos adelantados \\
+\midrule
+Subutilización post-excavación & Media & \textbf{BAJO:} Equipo ocioso después de completar hectáreas objetivo \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Estrategias de Mitigación}
+
+\textbf{Para Opción 2 Retroexcavadoras:}
+
+\begin{enumerate}
+  \item \textbf{Renta vs Compra:} Considerar arrendar 2da retro durante fase intensiva
+  \begin{itemize}
+    \item Costo renta: \$80,000/mes por 12 meses = \$960,000
+    \item Compra: \$1,580,000
+    \item \textit{Decisión:} Compra preferible si hay certeza de escalar a 20 ha (diferencia \$620k se amortiza con valor de reventa)
+  \end{itemize}
+  
+  \item \textbf{Servicios externos:} Ofrecer excavación de pocetas SPCM a productores regionales
+  \begin{itemize}
+    \item Tarifa comercial: \$30/poceta (vs costo interno \$22.89)
+    \item Margen: \$7.11/poceta
+    \item Meta modesta: 50,000 pocetas/año externas = \$355,500 ingresos adicionales
+  \end{itemize}
+  
+  \item \textbf{Venta post-proyecto:} Si no hay expansión confirmada después de 20 ha
+  \begin{itemize}
+    \item Valor de reventa CAT 420F (3 años uso): 70--80\% del precio original
+    \item Recuperación estimada: \$1,106,000 -- \$1,264,000
+    \item Costo neto real de 2da retro: \$316,000 -- \$474,000
+  \end{itemize}
+\end{enumerate}
+
+\newpage
+
+\section{Recomendaciones por Escala}
+
+\subsection{Fase Piloto 5 Hectáreas}
+
+\begin{center}
+\colorbox{tmblue!20}{\parbox{0.9\textwidth}{
+\textbf{RECOMENDACIÓN: 1 RETROEXCAVADORA}
+
+\vspace{0.3cm}
+
+\textbf{Justificación:}
+\begin{itemize}
+  \item Inversión adicional \$2.06M no crítica para escala piloto
+  \item Tiempo de 24 meses es manejable para validación de modelo
+  \item Permite aprendizaje operativo antes de escalar
+  \item Menor complejidad administrativa con 1 equipo
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Condición para reconsiderar:}\\
+Si existe \textbf{contrato firmado o plan concreto} de expansión a 20 hectáreas, adquirir 2da retroexcavadora desde inicio del proyecto piloto para maximizar beneficios de tiempo.
+}}
+\end{center}
+
+\subsection{Fase 1 - 20 Hectáreas}
+
+\begin{center}
+\colorbox{tmgreen!30}{\parbox{0.9\textwidth}{
+\textbf{RECOMENDACIÓN: 2 RETROEXCAVADORAS (OBLIGATORIO)}
+
+\vspace{0.3cm}
+
+\textbf{Justificación:}
+\begin{itemize}
+  \item \textbf{ROI 3,425\%} sobre inversión adicional hace decisión matemáticamente irrefutable
+  \item Reducción de tiempo crítico de 8 años a 4 años
+  \item Ingresos adelantados de \$55.3 millones
+  \item Permite comenzar generación de ingresos comerciales año 5 vs año 9
+  \item Costo total con 2 retros (\$5.08M) es \textbf{menor} que con 1 retro (\$5.42M) por reducción de años operativos
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Implementación óptima:}\\
+Comprar 2da retroexcavadora al finalizar \textbf{mes 18 de fase piloto} (cuando hay certeza de expansión a 20 ha).
+}}
+\end{center}
+
+\subsection{Fase 2 - 100 Hectáreas}
+
+\begin{center}
+\colorbox{tmgreen!20}{\parbox{0.9\textwidth}{
+\textbf{RECOMENDACIÓN: 4--5 RETROEXCAVADORAS}
+
+\vspace{0.3cm}
+
+\textbf{Meta:} Completar en 5--8 años
+\begin{itemize}
+  \item Con 4 retros: 10 años (marginalmente aceptable)
+  \item Con 5 retros: 8 años (óptimo)
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Inversión:} \$7.9M (5 retros) vs ingresos proyectados \$691.8M en primeros 5 años de producción completa.
+
+\vspace{0.3cm}
+
+\textbf{Estrategia de adquisición:} Escalonada según disponibilidad de capital y progreso del proyecto.
+}}
+\end{center}
+
+\subsection{Proyecto Completo 250 Hectáreas}
+
+\begin{center}
+\colorbox{tmblue!20}{\parbox{0.9\textwidth}{
+\textbf{RECOMENDACIÓN: MODELO ESCALONADO 8--10 RETROEXCAVADORAS}
+
+\vspace{0.3cm}
+
+\textbf{Estrategia gradual (NO adquirir todas simultáneamente):}
+\begin{itemize}
+  \item \textbf{Años 1--2:} 2 retros → 20 hectáreas
+  \item \textbf{Años 3--5:} +3 retros → 60 hectáreas adicionales (80 ha acumuladas)
+  \item \textbf{Años 6--10:} +3 retros → 100 hectáreas adicionales (180 ha acumuladas)
+  \item \textbf{Años 11--15:} +2 retros → 70 hectáreas adicionales (250 ha totales)
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Ventajas del modelo escalonado:}
+\begin{enumerate}
+  \item Financiar expansión con ingresos generados (autofinanciamiento)
+  \item Reducir riesgo de capital inmovilizado en equipos ociosos
+  \item Adaptar ritmo de expansión a condiciones de mercado
+  \item Permite validar modelo a pequeña escala antes de comprometer capital masivo
+\end{enumerate}
+}}
+\end{center}
+
+\newpage
+
+\section{Tabla Resumen Ejecutiva}
+
+\begin{table}[h]
+\centering
+\caption{Resumen Comparativo por Escala de Proyecto}
+\small
+\begin{tabular}{@{}p{0.12\textwidth}p{0.12\textwidth}p{0.1\textwidth}p{0.12\textwidth}p{0.12\textwidth}p{0.08\textwidth}p{0.18\textwidth}@{}}
+\toprule
+\textbf{Escala} & \textbf{Equipo} & \textbf{Tiempo} & \textbf{Inversión} & \textbf{Ingresos Adelantados} & \textbf{ROI} & \textbf{Recomendación} \\
+\midrule
+\rowcolor{tmblue!10}
+5 ha & 1 retro & 24 meses & \$2.06M & --- & --- & $\checkmark$ \textbf{ÓPTIMO} \\
+\rowcolor{tmblue!10}
+5 ha & 2 retros & 12 meses & \$4.12M & \$3.75M & 82\% & $\triangle$ Opcional si expande a 20 ha \\
+\midrule
+\rowcolor{tmdanger!20}
+20 ha & 1 retro & 96 meses & \$5.42M & --- & --- & $\times$ \textbf{INVIABLE} (8 años) \\
+\rowcolor{tmgreen!30}
+20 ha & 2 retros & 48 meses & \$5.08M & \$55.3M & 3,425\% & $\checkmark$ \textbf{OBLIGATORIO} \\
+\rowcolor{tmgreen!30}
+\textbf{20 ha} & \textbf{4 retros} & \textbf{24 meses} & \textbf{\$10.16M} & \textbf{\$31.1M} & \textbf{513\%} & $\checkmark$ \textbf{SI HAY URGENCIA} \\
+\midrule
+\rowcolor{tmgreen!20}
+100 ha & 4 retros & 60 meses & \$7.90M & \$276M & 3,394\% & $\checkmark$ \textbf{ÓPTIMO} \\
+\midrule
+\rowcolor{tmgreen!20}
+250 ha & 8--10 retros & 120 meses & Escalonado & \$691M & Escalonado & $\checkmark$ \textbf{MODELO GRADUAL} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{1cm}
+
+\section{Conclusiones Finales}
+
+\subsection{Hallazgos Críticos}
+
+\begin{enumerate}
+  \item \textbf{Punto de inflexión en 20 hectáreas:} Para cualquier proyecto de 20 hectáreas o más, una sola retroexcavadora resulta operativamente inviable por tiempo excesivo (8+ años) y económicamente irracional por costo de oportunidad de ingresos diferidos.
+  
+  \item \textbf{Beneficio neto irrefutable:} Con ROI de 3,425\% en escala 20 hectáreas, la segunda retroexcavadora genera \$54.1 millones de beneficio neto sobre inversión adicional de apenas \$1.58 millones.
+  
+  \item \textbf{Autofinanciamiento del equipo:} Los ingresos adelantados en solo 1.4 meses de producción completa pagan íntegramente la inversión adicional de la segunda retroexcavadora.
+  
+  \item \textbf{Reducción de costos totales:} Paradójicamente, operar con 2 retroexcavadoras en escala 20 hectáreas resulta \textbf{más económico} (\$5.08M) que con 1 retroexcavadora (\$5.42M) debido a la reducción de años operativos de 8 a 4.
+  
+  \item \textbf{Escalamiento requiere modelo gradual:} Para proyectos de 100--250 hectáreas, se requiere adquisición escalonada de 4--10 retroexcavadoras, financiando expansión con ingresos generados.
+\end{enumerate}
+
+\subsection{Decisión Recomendada}
+
+\begin{center}
+\fcolorbox{tmgreen}{tmgreen!10}{\parbox{0.92\textwidth}{
+\vspace{0.3cm}
+\textbf{\Large ESTRATEGIA ÓPTIMA DE IMPLEMENTACIÓN}
+
+\vspace{0.5cm}
+
+\textbf{FASE PILOTO (Año 1--2):}
+\begin{itemize}
+  \item Adquirir \textbf{1 retroexcavadora} CAT 420F
+  \item Excavar 5 hectáreas para validación de modelo operativo
+  \item Tiempo estimado: 24 meses
+  \item Inversión: \$2.06M
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{DECISIÓN CRÍTICA (Mes 18):}
+\begin{itemize}
+  \item Evaluar confirmación de expansión a 20 hectáreas
+  \item Si hay certeza de expansión: \textbf{Adquirir 2da retroexcavadora inmediatamente}
+  \item Si no hay certeza: Continuar con 1 retro hasta definición
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{FASE 1 EXPANSIÓN (Año 3--5):}
+\begin{itemize}
+  \item Operar con \textbf{2 retroexcavadoras} simultáneamente
+  \item Completar 20 hectáreas totales en 4 años desde inicio del proyecto
+  \item Inversión adicional: \$1.58M
+  \item Beneficio neto: \$54.1M en ingresos adelantados
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{EXPANSIÓN FUTURA (Año 6+):}
+\begin{itemize}
+  \item Evaluar adquisición de retroexcavadoras 3--5 si expansión a 100 hectáreas está financiada
+  \item Modelo escalonado para 250 hectáreas: adquirir 8--10 retros gradualmente en fases quinquenales
+  \item Financiar con ingresos generados por hectáreas ya en producción
+\end{itemize}
+
+\vspace{0.3cm}
+}}
+\end{center}
+
+\vspace{1cm}
+
+Esta estrategia minimiza riesgo financiero en fase inicial, permite validación operativa del modelo, y garantiza capacidad de escalamiento rápido una vez confirmada la viabilidad comercial del proyecto.
+
+\newpage
+
+\section{ESCENARIO ÓPTIMO: 20 Hectáreas en Menor Tiempo con Menor Costo}
+
+\subsection{Planteamiento del Problema}
+
+El proyecto requiere establecer \textbf{20 hectáreas piloto} divididas en \textbf{cuatro subsecciones de 5 hectáreas}, con la condición de:
+
+\begin{center}
+\colorbox{tmyellow!30}{\parbox{0.85\textwidth}{
+\centering\textbf{\Large MENOR TIEMPO POSIBLE + MENOR COSTO POSIBLE}
+}}
+\end{center}
+
+\vspace{0.3cm}
+
+Esta es una \textbf{optimización multi-objetivo} con dos variables contradictorias:
+\begin{itemize}
+  \item Menor tiempo $\rightarrow$ Más equipos $\rightarrow$ Mayor inversión
+  \item Menor costo $\rightarrow$ Menos equipos $\rightarrow$ Mayor tiempo
+\end{itemize}
+
+La clave para resolver esta aparente contradicción es el \textbf{modelo escalonado por subsecciones}, que permite generar ingresos tempranos que financian la expansión.
+
+\subsection{Comparación: Comprar vs Contratar Excavación}
+
+\begin{table}[h]
+\centering
+\caption{Análisis Financiero: Excavación Contratada vs Equipo Propio (20 hectáreas)}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Concepto} & \textbf{Contratar} & \textbf{Equipo Propio} \\
+\midrule
+Costo excavación por hectárea & \$775,500 & \$503,600 \\
+\textbf{Total 20 hectáreas} & \textbf{\$15,510,000} & \textbf{\$10,072,000} \\
+\midrule
+Inversión en equipo (1 retro) & - & \$1,580,000 \\
+Operación 4 años (1 retro) & - & \$1,919,700 \\
+Costo total con equipo & - & \$13,571,700 \\
+\midrule
+\textbf{Ahorro comprando equipo} & - & \textbf{\$1,938,300} \\
+\textbf{Ahorro porcentual} & - & \textbf{12.5\%} \\
+\midrule
+Tiempo de excavación & Inmediato & 96 meses (1 retro) \\
+ & (contratan todo) & 48 meses (2 retros) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Análisis crítico:}
+\begin{itemize}
+  \item \textbf{Contratar} es \$1.94M más caro que comprar equipo
+  \item \textbf{Pero} contratar permite excavación inmediata (semanas vs años)
+  \item \textbf{Equipo propio} con 1 retro toma 8 años $\rightarrow$ INVIABLE
+  \item \textbf{Equipo propio} con 2 retros toma 4 años $\rightarrow$ Largo pero viable
+\end{itemize}
+
+\subsection{Modelo Escalonado por Subsecciones (4 × 5 hectáreas)}
+
+La arquitectura del proyecto permite implementar un \textbf{modelo de producción escalonada}:
+
+\begin{enumerate}
+  \item \textbf{Subsección 1 (5 ha):} Desmontar $\rightarrow$ Excavar $\rightarrow$ Sembrar $\rightarrow$ \textcolor{tmgreen}{\textbf{PRODUCIR}}
+  \item \textbf{Subsección 2 (5 ha):} Desmontar $\rightarrow$ Excavar $\rightarrow$ Sembrar $\rightarrow$ \textcolor{tmgreen}{\textbf{PRODUCIR}} (mientras subsección 1 ya genera ingresos)
+  \item \textbf{Subsección 3 (5 ha):} Desmontar $\rightarrow$ Excavar $\rightarrow$ Sembrar $\rightarrow$ \textcolor{tmgreen}{\textbf{PRODUCIR}} (subsecciones 1 y 2 ya produciendo)
+  \item \textbf{Subsección 4 (5 ha):} Desmontar $\rightarrow$ Excavar $\rightarrow$ Sembrar $\rightarrow$ \textcolor{tmgreen}{\textbf{PRODUCIR}} (subsecciones 1, 2 y 3 ya produciendo)
+\end{enumerate}
+
+\vspace{0.3cm}
+
+\textbf{Ventaja crítica:} No es necesario esperar a tener las 20 hectáreas completas para empezar a generar ingresos. Las primeras subsecciones financian la excavación de las siguientes.
+
+\subsubsection{Cronograma de Producción Escalonada}
+
+\begin{table}[h]
+\centering
+\caption{Modelo Escalonado con 1 Retroexcavadora (incluye desmonte)}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Subsección} & \textbf{Desmonte +} & \textbf{Siembra} & \textbf{Primera} & \textbf{Ingresos} \\
+ & \textbf{Excavación} & \textbf{(mes)} & \textbf{Cosecha} & \textbf{Acumulados} \\
+\midrule
+5 ha (Subsección 1) & Mes 1--24.5 & Mes 25 & Mes 29 & Desde mes 29 \\
+5 ha (Subsección 2) & Mes 25--49 & Mes 50 & Mes 54 & Subsección 1 \\
+5 ha (Subsección 3) & Mes 50--74 & Mes 75 & Mes 79 & Subsecciones 1+2 \\
+5 ha (Subsección 4) & Mes 75--99 & Mes 100 & Mes 104 & Subsecciones 1+2+3 \\
+\midrule
+\textbf{Total 20 ha} & \textbf{99 meses} & - & - & \textbf{20 ha produciendo en mes 104} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Nota:} Desmonte agrega 0.5 meses (2 semanas) por subsección. Con 1 retroexcavadora, toma 8.3 años completar 20 hectáreas, \textbf{PERO} empieza a generar ingresos en el mes 29 (año 2.4) con las primeras 5 hectáreas.
+
+\subsection{Análisis de Flujo de Caja con Modelo Escalonado}
+
+\begin{table}[h]
+\centering
+\caption{Ingresos Acumulados Anuales - Modelo Escalonado con 2 Retros (Miles de MXN)}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\textbf{Año} & \textbf{5 ha} & \textbf{10 ha} & \textbf{15 ha} & \textbf{20 ha} & \textbf{Inversión} & \textbf{Flujo Neto} \\
+ & \textbf{(Sub 1)} & \textbf{(Sub 1+2)} & \textbf{(Sub 1+2+3)} & \textbf{(Todas)} & \textbf{Acumulada} & \textbf{Acumulado} \\
+\midrule
+Año 1 & - & - & - & - & \$4,680 & -\$4,680 \\
+Año 2 (desde mes 17) & \$4,027 & - & - & - & \$4,680 & -\$653 \\
+Año 3 (desde mes 29) & \$6,903 & \$4,027 & - & - & \$4,680 & +\$6,277 \\
+Año 4 (desde mes 41) & \$6,903 & \$6,903 & \$4,027 & - & \$4,680 & +\$19,430 \\
+Año 5 (desde mes 53) & \$6,903 & \$6,903 & \$6,903 & \$4,027 & \$4,680 & +\$44,086 \\
+Año 6+ & - & - & - & \$27,612 & \$4,680 & Producción plena \\
+\midrule
+\multicolumn{7}{l}{\textit{Ingresos anuales: 5 ha = \$6.903M/año completo. Año parcial prorrateado desde inicio producción}} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Punto de equilibrio:} Año 3 (mes 29) - Flujo neto positivo gracias a cosechas tempranas.
+
+\subsection{Escenarios Optimizados: Tiempo vs Costo}
+
+\begin{table}[h]
+\centering
+\caption{Tabla de Decisión: Estrategias para 20 Hectáreas}
+\begin{tabular}{@{}p{2.5cm}p{1.8cm}p{2cm}p{2.5cm}p{3cm}@{}}
+\toprule
+\textbf{Estrategia} & \textbf{Tiempo Total} & \textbf{Inversión Inicial} & \textbf{Costo Total 20 ha} & \textbf{Ingresos Anticipados vs Base} \\
+\midrule
+\rowcolor{tmred!20}
+\textbf{1. Solo Contratar} & 3--6 meses & \$15.51M & \$15.51M & \$0 (referencia base) \\
+\midrule
+\rowcolor{tmyellow!20}
+\textbf{2. Comprar 1 Retro + Escalonado} & 96 meses & \$3.10M & \$13.57M & +\$110.4M generados en 8 años \\
+\midrule
+\rowcolor{tmgreen!30}
+\textbf{3. Comprar 2 Retros + Escalonado} & 48 meses & \$4.68M & \$15.15M & +\$55.2M generados en 4 años \\
+\midrule
+\rowcolor{tmblue!20}
+\textbf{4. Híbrido: 1 Retro + Contratar 10 ha} & 24 meses & \$9.35M & \$17.33M & +\$27.6M generados en 2 años \\
+\midrule
+\rowcolor{tmred!30}
+\textbf{5. Comprar 4 Retros} & 24 meses & \$10.16M & \$16.73M & +\$31.1M vs 2 retros \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Recomendación Estratégica: LA SOLUCIÓN ÓPTIMA}
+
+Después de analizar todas las opciones, la estrategia que \textbf{minimiza tanto tiempo como costo} es:
+
+\begin{center}
+\colorbox{tmgreen!30}{\parbox{0.9\textwidth}{
+\vspace{0.3cm}
+\centering\textbf{\Large ESTRATEGIA 3: COMPRAR 2 RETROEXCAVADORAS + MODELO ESCALONADO}
+\vspace{0.3cm}
+}}
+\end{center}
+
+\subsubsection{Justificación Técnica y Financiera}
+
+\textbf{Tiempo:}
+\begin{itemize}
+  \item \textbf{4 años} para completar 20 hectáreas (vs 8 años con 1 retro)
+  \item 2 retroexcavadoras trabajando \textbf{juntas} en cada subsección = 12 meses por subsección
+  \item \textbf{Primera cosecha en mes 17} (año 2) - solo 17 meses después de iniciar
+  \item 10 hectáreas produciendo desde mes 29 (año 3)
+  \item 15 hectáreas produciendo desde mes 41 (año 4)
+  \item \textbf{20 hectáreas completas produciendo en mes 53} (año 5)
+\end{itemize}
+
+\textbf{Costo:}
+\begin{itemize}
+  \item Inversión inicial: \$4.68M (2 retroexcavadoras)
+  \item Costo total: \$15.15M (vs \$15.51M contratando)
+  \item \textbf{Ahorro de \$360,000} vs contratar excavación completa
+  \item \textbf{Genera \$55.2M en ingresos} mientras se completa el proyecto
+\end{itemize}
+
+\textbf{Flujo de caja:}
+\begin{itemize}
+  \item Año 1: Inversión en equipos (\$4.68M), excavación subsección 1
+  \item \textbf{Mes 17 (Año 2)}: Primera cosecha subsección 1 (\$6.9M/año desde mes 17)
+  \item Año 2--3: Excavación subsecciones 2--3, subsección 1 produciendo
+  \item Año 3: Subsecciones 1+2 produciendo (\$13.8M/año desde mes 29)
+  \item Año 4: Subsecciones 1+2+3 produciendo (\$20.7M/año desde mes 41)
+  \item \textbf{Año 5}: 20 hectáreas completas produciendo (\$27.6M/año desde mes 53)
+  \item \textbf{Recuperación de inversión: Año 3} (primera cosecha llega año 2)
+\end{itemize}
+
+\subsubsection{Cronograma Detallado (2 Retroexcavadoras)}
+
+\begin{table}[h]
+\centering
+\caption{Cronograma Escalonado Optimizado (2 Retros Trabajando Juntas)}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Período} & \textbf{Actividad 2 Retros} & \textbf{Eventos Clave} & \textbf{Subsecciones} & \textbf{Ingresos} \\
+ & \textbf{(Trabajando Juntas)} & & \textbf{Produciendo} & \textbf{Mensuales} \\
+\midrule
+Meses 1--12 & Excavan Subsección 1 & - & - & - \\
+Mes 13 & - & Siembra Sub 1 & - & - \\
+\textbf{Mes 17} & \textbf{Excavan Subsección 2} & \textbf{1ra cosecha Sub 1} & \textbf{Sub 1 (5 ha)} & \textbf{\$575K} \\
+Meses 13--24 & Excavan Subsección 2 & - & Sub 1 & \$575K \\
+Mes 25 & - & Siembra Sub 2 & Sub 1 & \$575K \\
+Meses 25--36 & Excavan Subsección 3 & - & Sub 1 & \$575K \\
+\textbf{Mes 29+} & \textbf{-} & \textbf{2da cosecha Sub 2} & \textbf{Sub 1+2 (10 ha)} & \textbf{\$1,150K} \\
+Mes 37 & - & Siembra Sub 3 & Sub 1+2 & \$1,150K \\
+Meses 37--48 & Excavan Subsección 4 & - & Sub 1+2 & \$1,150K \\
+\textbf{Mes 41+} & \textbf{-} & \textbf{3ra cosecha Sub 3} & \textbf{Sub 1+2+3 (15 ha)} & \textbf{\$1,725K} \\
+Mes 49 & - & Siembra Sub 4 & Sub 1+2+3 & \$1,725K \\
+\textbf{Mes 53+} & \textbf{Venta/Expansión} & \textbf{4ta cosecha Sub 4} & \textbf{Todas (20 ha)} & \textbf{\$2,300K} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Comparación vs Otras Estrategias}
+
+\textbf{¿Por qué NO contratar excavación completa? (Estrategia 1)}
+\begin{itemize}
+  \item Costo \$360,000 mayor que comprar 2 retros
+  \item No genera activos de largo plazo
+  \item No permite escalamiento futuro a 250 ha sin contratar nuevamente
+\end{itemize}
+
+\textbf{¿Por qué NO comprar solo 1 retro? (Estrategia 2)}
+\begin{itemize}
+  \item Toma 8 años vs 4 años (demasiado lento)
+  \item Retrasa ingresos 4 años adicionales
+  \item Pierde \$55.2M en ingresos adelantados
+\end{itemize}
+
+\textbf{¿Por qué NO modelo híbrido? (Estrategia 4)}
+\begin{itemize}
+  \item Costo \$2.18M mayor que Estrategia 3
+  \item Menor ahorro a largo plazo
+  \item Reduce activos propios (solo 1 retro vs 2)
+\end{itemize}
+
+\textbf{¿Por qué NO comprar 4 retros? (Estrategia 5)}
+\begin{itemize}
+  \item Solo ahorra 2 años adicionales vs 2 retros
+  \item Inversión inicial \$5.48M mayor
+  \item Capacidad ociosa después de completar 20 ha (a menos que haya certeza de expansión a 100--250 ha)
+  \item ROI 513\% es bueno, pero solo justificable si hay contratos comerciales confirmados
+\end{itemize}
+
+\subsection{Análisis de Sensibilidad}
+
+\subsubsection{¿Qué pasa si hay urgencia de producir antes?}
+
+Si se requieren las 20 hectáreas en 2 años en lugar de 4:
+
+\begin{itemize}
+  \item \textbf{Opción A:} Comprar 4 retroexcavadoras (\$10.16M inicial)
+  \item \textbf{Opción B:} Comprar 2 retros + contratar excavación de 10 ha (\$9.34M)
+  \item \textbf{Recomendación:} Opción B (modelo híbrido) es más flexible
+\end{itemize}
+
+\subsubsection{¿Qué pasa si solo hay capital para 1 retro?}
+
+Si solo hay \$3.1M disponibles:
+
+\begin{itemize}
+  \item Implementar Estrategia 2 (1 retro + escalonado)
+  \item Evaluar en año 3 si hay suficientes ingresos para comprar 2da retro
+  \item Financiar 2da retro con ingresos de primeras 5 hectáreas (\$6.9M/año)
+  \item Esto permite \textbf{autofinanciamiento} del escalamiento
+\end{itemize}
+
+\subsection{CONCLUSIÓN FINAL}
+
+\begin{center}
+\colorbox{tmgreen!40}{\parbox{0.92\textwidth}{
+\vspace{0.3cm}
+\textbf{\Large Para 20 hectáreas en MENOR TIEMPO con MENOR COSTO:}
+
+\vspace{0.3cm}
+
+\textbf{COMPRAR 2 RETROEXCAVADORAS + MODELO ESCALONADO (4 subsecciones × 5 ha)}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+  \item \textbf{Tiempo:} 4 años hasta 20 ha completas (vs 8 con 1 retro, vs 2 con 4 retros)
+  \item \textbf{Primera cosecha:} Mes 17 (año 2) - \textbf{Solo 17 meses desde inicio}
+  \item \textbf{Costo:} \$15.15M (vs \$15.51M contratando, \textbf{ahorro \$360K})
+  \item \textbf{Inversión inicial:} \$4.68M (financiable)
+  \item \textbf{Punto de equilibrio:} Año 3 (gracias a ingresos tempranos)
+  \item \textbf{Producción escalonada:} 5 ha → 10 ha → 15 ha → 20 ha cada 12 meses
+  \item \textbf{Activos:} 2 retros para futura expansión a 250 ha
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{ROI: 3,425\% sobre inversión adicional de 2da retroexcavadora}
+\vspace{0.3cm}
+}}
+\end{center}
+
+\vspace{0.5cm}
+
+Esta estrategia es \textbf{óptima} porque:
+\begin{enumerate}
+  \item Minimiza costo total (incluso más barato que contratar)
+  \item Balance ideal entre velocidad (4 años) y prudencia financiera
+  \item \textbf{Primera cosecha en solo 17 meses} - flujo de caja muy temprano
+  \item Genera flujo de caja positivo desde año 3 (antes año 4)
+  \item Crea activos de largo plazo para escalamiento futuro
+  \item Permite autofinanciamiento si solo hay capital inicial para 1 retro
+\end{enumerate}
+
+\end{document}
