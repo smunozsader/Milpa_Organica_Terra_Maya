@@ -28,6 +28,7 @@
 \definecolor{tmdanger}{RGB}{220,20,60}
 \definecolor{tmyellow}{RGB}{255,215,0}
 \definecolor{tmred}{RGB}{220,20,60}
+\definecolor{tmorange}{RGB}{255,140,0}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -1603,6 +1604,110 @@ Año 6+ & - & - & - & \$27,612 & \$4,680 & Producción plena \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\subsection{Comparación Visual Integrada: Todas las Estrategias}
+
+\begin{figure}[h]
+\centering
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.12cm,
+  y unit title=0.7cm,
+  y unit chart=0.6cm,
+  title height=1,
+  bar height=0.5,
+  group height=0.4,
+  inline
+]{0}{108}
+\gantttitle{\textbf{Comparación de 5 Estrategias para 20 Hectáreas (108 meses = 9 años)}}{108} \\
+\gantttitle{Año 1}{12}
+\gantttitle{Año 2}{12}
+\gantttitle{Año 3}{12}
+\gantttitle{Año 4}{12}
+\gantttitle{Año 5}{12}
+\gantttitle{Año 6}{12}
+\gantttitle{Año 7}{12}
+\gantttitle{Año 8}{12}
+\gantttitle{Año 9}{12} \\
+
+% Escenario 1: Solo Contratar (3-6 meses)
+\ganttgroup[group/.append style={fill=tmred!50}]{\textbf{1. CONTRATAR TODO}}{1}{6} \\
+\ganttbar[bar/.append style={fill=tmred!70}]{Excavación contratada}{1}{6} \\
+\ganttmilestone[milestone/.append style={fill=tmred}]{Cosecha}{10}
+\ganttbar{}{}{}\\
+
+% Escenario 2: 1 Retro Escalonado (96 meses = 8 años)
+\ganttgroup[group/.append style={fill=tmyellow!50}]{\textbf{2. 1 RETRO (96 meses)}}{1}{99} \\
+\ganttbar[bar/.append style={fill=tmyellow!60}]{Subsección 1}{1}{24} \\
+\ganttbar[bar/.append style={fill=tmyellow!60}]{Subsección 2}{25}{49} \\
+\ganttbar[bar/.append style={fill=tmyellow!60}]{Subsección 3}{50}{74} \\
+\ganttbar[bar/.append style={fill=tmyellow!60}]{Subsección 4}{75}{99} \\
+\ganttmilestone[milestone/.append style={fill=tmyellow}]{1ra Cosecha}{29} \\
+\ganttmilestone[milestone/.append style={fill=tmyellow}]{20 ha completas}{104}
+\ganttbar{}{}{}\\
+
+% Escenario 3: 2 Retros Escalonado (48 meses = 4 años) - RECOMENDADO
+\ganttgroup[group/.append style={fill=tmgreen!70}]{\textbf{3. 2 RETROS - ÓPTIMO (48 meses)}}{1}{49} \\
+\ganttbar[bar/.append style={fill=tmgreen!80}]{Subsección 1}{1}{12} \\
+\ganttbar[bar/.append style={fill=tmgreen!80}]{Subsección 2}{13}{24} \\
+\ganttbar[bar/.append style={fill=tmgreen!80}]{Subsección 3}{25}{36} \\
+\ganttbar[bar/.append style={fill=tmgreen!80}]{Subsección 4}{37}{49} \\
+\ganttmilestone[milestone/.append style={fill=tmgreen}]{1ra Cosecha}{17} \\
+\ganttmilestone[milestone/.append style={fill=tmgreen}]{20 ha completas}{53}
+\ganttbar{}{}{}\\
+
+% Escenario 4: Híbrido (1 retro + contratar 10 ha) - 24 meses
+\ganttgroup[group/.append style={fill=tmblue!50}]{\textbf{4. HÍBRIDO: 1 Retro + Contratar}}{1}{24} \\
+\ganttbar[bar/.append style={fill=tmblue!60}]{Excavación propia (10 ha)}{1}{24} \\
+\ganttbar[bar/.append style={fill=tmblue!40}]{Excavación contratada (10 ha)}{1}{6} \\
+\ganttmilestone[milestone/.append style={fill=tmblue}]{1ra Cosecha}{10} \\
+\ganttmilestone[milestone/.append style={fill=tmblue}]{20 ha completas}{28}
+\ganttbar{}{}{}\\
+
+% Escenario 5: 4 Retros (24 meses = 2 años)
+\ganttgroup[group/.append style={fill=tmorange!50}]{\textbf{5. 4 RETROS (24 meses)}}{1}{24} \\
+\ganttbar[bar/.append style={fill=tmorange!60}]{4 subsecciones simultáneas}{1}{12} \\
+\ganttbar[bar/.append style={fill=tmorange!60}]{Instalación y siembra}{13}{24} \\
+\ganttmilestone[milestone/.append style={fill=tmorange}]{1ra Cosecha}{17} \\
+\ganttmilestone[milestone/.append style={fill=tmorange}]{20 ha completas}{28} \\
+
+\end{ganttchart}
+\caption{Comparación Temporal de las 5 Estrategias de Implementación para 20 Hectáreas}
+\label{fig:gantt_comparativo_integrado}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Resumen Comparativo de Estrategias}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Estrategia} & \textbf{Tiempo} & \textbf{1ra Cosecha} & \textbf{Inversión} & \textbf{Costo Total} \\
+\midrule
+\rowcolor{tmred!20}
+1. Solo Contratar & 6 meses & Mes 10 & \$15.51M & \$15.51M \\
+\rowcolor{tmyellow!20}
+2. 1 Retro Escalonado & 99 meses & Mes 29 & \$1.58M & \$13.57M \\
+\rowcolor{tmgreen!30}
+\textbf{3. 2 Retros Escalonado} & \textbf{49 meses} & \textbf{Mes 17} & \textbf{\$3.395M} & \textbf{\$15.15M} \\
+\rowcolor{tmblue!20}
+4. Híbrido & 24 meses & Mes 10 & \$9.35M & \$17.33M \\
+\rowcolor{tmorange!20}
+5. 4 Retros & 24 meses & Mes 17 & \$10.16M & \$16.73M \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Análisis Visual:}
+\begin{itemize}
+  \item \textbf{Estrategia 3 (2 Retros)} destaca como el balance óptimo entre velocidad y costo
+  \item Primera cosecha en \textbf{mes 17} vs mes 29 (estrategia 2) = 12 meses de ventaja
+  \item Completa 20 ha en \textbf{49 meses} vs 99 meses (estrategia 2) = 50 meses más rápido
+  \item Costo similar a contratar todo (\$15.15M vs \$15.51M) pero con equipos que se reutilizan
+  \item Evita sobreinversión de estrategia 5 (4 retros a \$10.16M)
+\end{itemize}
+
+\newpage
 
 \subsection{Recomendación Estratégica: LA SOLUCIÓN ÓPTIMA}
 
